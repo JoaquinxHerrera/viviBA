@@ -1,0 +1,222 @@
+/*hoja de estilo en cascada
+selector{
+propiedad: valor;
+propiedad: valor
+}*/
+
+/*3 selectores
+selector de etiqueta
+Nombredeetiquetadehtml{
+    propiedad: valor;
+    propiedad: valor;
+}
+
+selector universal
+*{
+
+i
+
+*/
+
+
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap');
+
+
+
+*{
+font-size: small;
+
+
+}
+body{
+    background-color: white;
+    margin:0;
+
+}
+header {background-color: pink;
+}
+.colorFondoHeader{background-color:transparent;
+}
+
+
+/*regla de padres e hijos*/
+
+/*main de la seccion contacto*/
+
+
+.hero {
+    width: 100%;
+    height:120vh;
+    background-image:linear-gradient(90deg, rgba(0,0,0,1) 0%, rgba(0,0,0,0) 100%), url(../assets/img/background.png);
+    background-size: contain;
+}
+
+
+header{
+    padding: 30px;
+}
+
+.logo {
+    display:inline-block;
+    width:50%;
+
+}
+
+nav {
+    display:inline-block;
+    width:48%;
+    background: rgba(217, 217, 217, 0.51);
+    border: 1px solid #FFFFFF;
+    border-radius: 26.5px;
+}
+
+
+nav ul li {
+    display:inline;
+    padding-left: 30px;
+    padding-right:30px;
+    font-family: 'Arial';
+font-style: normal;
+font-weight: 700;
+font-size: 16px;
+text-decoration: none;
+
+
+
+}
+
+
+nav ul li a{
+    text-decoration: none;
+    color:white;
+}
+
+.titulos{
+    margin: 20vh 30px;
+}
+
+.titulos p{
+color:white;
+width:40%;
+margin-bottom: 50px
+}
+
+.titulos h1{
+    color:white;
+    width: 50%
+}
+h1 {
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 46px;
+    line-height: auto;
+}
+
+p{
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 26px;
+}
+
+.boton{
+    font-family: 'Montserrat';
+font-style: normal;
+font-weight: 400;
+font-size: 16px;
+color:white;
+margin: 0px 10px;
+padding:10px 35px;
+border-radius: 26.5px;
+text-decoration: none;
+}
+
+.boton1{
+background-color: #43A6D0;
+margin-top:60px
+}
+
+.boton2{
+    margin-top:60px;
+    border: 1px solid white;
+}
+
+
+.seccionFotos{
+    padding:100px;
+    text-align:center;
+    background-image: url(../assets/img/background_section1.png);
+    background-size: contain
+}
+
+.seccionFotos ul li{
+    list-style-type: none;
+    width:auto;
+    display:inline-block;
+    margin: 20px
+    
+}
+
+.seccionFotos ul li img{
+    width: 350px;
+    height: 350px;
+}
+
+.seccionFotos ul li p{
+    display: block;
+    width:auto;
+
+}
+
+footer{
+    background-color: #2F3437;
+    
+    padding: 50px;
+
+}
+
+.Redes{
+    text-align: center
+}
+
+.Redes a {
+    padding: 10px;
+}
+
+.footernav{
+text-align: center;
+margin-top:20px;
+}
+
+
+.footernav ul li {
+    display:inline;
+    padding-left: 30px;
+    padding-right:30px;
+    font-family: 'Arial';
+font-style: normal;
+font-weight: 700;
+font-size: 16px;
+text-decoration: none;
+
+
+}
+
+
+.footernav ul li a{
+    text-decoration: none;
+    color:white;
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 26px;
+}
+
+.copyright{
+    color: white;
+    text-align: center;
+}
