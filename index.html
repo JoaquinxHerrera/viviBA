@@ -5,79 +5,92 @@
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>viviBA</title>
+        <script src="https://kit.fontawesome.com/35b5a77d4f.js" crossorigin="anonymous"></script>
         <link rel="shortcut icon" href="./favicon.ico">
         <link href="./css/bootstrap.min.css" rel="stylesheet">
         <link rel="stylesheet" href="./css/estilos.css">
     </head>
     <body>
-        <section class="hero">
-        <header class="colorFondoHeader">
-        <div class="logo">
-                <img src="./assets/img/logo.png" alt="Logo viviBA">
-            </div>
-                <nav>
-                     <ul>
-                            <li><a href="#">Inicio</a></li>
-                            <li><a href="./pages/nosotros.html">Nosotros</a></li>
-                            <li><a href="./pages/actividades.html">Actividades</a></li>
-                            <li><a href="./pages/galeria.html">Galeria</a></li>
-                            <li><a href="./pages/contacto.html">Contacto</a></li>
-                     </ul>
+        <div class="hero">
+            <header class="colorFondoHeader"><!--Esto es el header-->
+                <nav class="navbar slide navbar-expand-lg navbar-dark">
+                    <div class="container-fluid">
+                        <a class="navbar-brand" href="index.html">
+                            <img class="logo"src="./assets/img/logo.png" alt="Logo viviBA" >
+                        </a>
+                        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                            <span class="navbar-toggler-icon"></span>
+                        </button>
+                        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                            <ul class="navbar-nav mb-lg-0 d-flex ms-auto justify-content-evenly  ColorNav"><!--no se como sacarle el borde del nav cuando pasa a hamburguesa, analizar para proxima entregaS-->
+                                <li class="nav-item">
+                                    <a class="nav-link active fs-4" aria-current="page" href="#">Inicio</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link active fs-4" href="./pages/nosotros.html">Nosotros</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link active fs-4" href="./pages/actividades.html">Actividades</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link active fs-4" href="./pages/galeria.html">Galeria</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link active fs-4" href="./pages/contacto.html">Contacto</a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
                 </nav>
-
-        </header><!--Esto es el header-->
-       
-            <div id="titulo" class="titulos">
-                    <h1>Descubrí las mejores actividades de Buenos Aires</h1>
-                    <p>Solemos acostumbrarnos a la rutina y siempre movernos por los mismos sitios, ya sea por comodidad o por   desconocimiento, solemos pasar.</p>
-                    <a href="#" class="boton boton1">Suscribete</a>
-                    <a href="#" class="boton boton2">Ver más</a>
-            </div>
-        
-        
-        </section>
-        <main><!--Esto es el main-->
-            <section class="seccionFotos">
-                <ul>
-                    <li>
-                        <img src="./assets/img/Cabildo.png" alt="historicos">
-                        <p>Lugares históricos que conocer en Buenos Aires</p>
-                    </li>
-                    <li>
-                        <img src="./assets/img/rooftop.png" alt="Rooftops">
-                        <p>Los mejores rooftops de la ciudad</p>
-                    </li><li>
-                        <img src="./assets/img/Gastronomia.png" alt="Gastronomía">
-                        <p>Gastronomía recomendada</p>
-                    </li><li>
-                        <img src="./assets/img/Espectaculo.png" alt="Espectáculos">
-                        <p>Lorem ipsum dolor, sit amet</p>
-                    </li>
-                    <li>
-                        <img src="./assets/img/Tango.png" alt="lorem">
-                        <p>Lorem ipsum dolor, sit amet consectetur</p>
-                    </li>
-                </ul>
+            </header>
+            
+            
+            <section id="titulo" class="titulosindex">
+                    <h1 class="MargenLogo h1index">Descubrí las mejores actividades de Buenos Aires</h1>
+                    <p class="MargenLogo h2index">Solemos acostumbrarnos a la rutina y siempre movernos por los mismos sitios, ya sea por comodidad o por   desconocimiento, solemos pasar.</p>
+                    <a href="./pages/contacto.html" class="boton boton1 fw-bold">Suscribete</a>
+                    <a href="./pages/actividades.html" class="boton boton2 fw-bold">Ver más</a>
             </section>
-        </main>
         
-        <footer><!--Esto es el footer-->
-            <div class="Redes">
-                <a href="https://www.instagram.com/" target="blank"><img src="./assets/img/instagram.png" alt="InstagramLogo"></a>
-                <a href="https://twitter.com"><img src="./assets/img/Twitter.png" alt="TwitterLogo"></a>
-                <a href="https://www.facebook.com/"><img src="./assets/img/Facebook.png" alt="FacebookLogo"></a>
+        </div>
+        <div class="FondoMainInicio">
+        <main class="container galeriaIndex"><!--Esto es el main-->
+            <div class="row"><!--Agregarle efecto a las fotos, ej:hover-->
+                <div class="col-sm-12 col-md-4  seccionFotos" >
+                    <img src="./assets/img/Cabildo.png" class="indexFotos" alt="Imagen del cabildo, un ejemplo de los lugares históricos para visitar en Buenos Aires">
+                    <p class="fs-4 mt-2">Lugares históricos que conocer en Buenos Aires</p>
+                </div>
+                <div class="col-sm-12 col-md-4 seccionFotos">
+                    <img src="./assets/img/rooftop.png"  class="indexFotos" alt="Imagen nocturna de un rooftop de Buenos Aires, ideal para ir a tommar algo">
+                    <p class="fs-4 mt-2">Los mejores rooftops de la ciudad</p>
+                </div>
+                <div class="col-sm-12 col-md-4 seccionFotos">
+                    <img src="./assets/img/Gastronomia.png"  class="indexFotos " alt="Imagen de asado, gastronomia clásica de Argentina">
+                    <p class="fs-4 mt-2">Gastronomía recomendada</p>
+                </div>
             </div>
-            <div class="footernav">
-                <ul>
-                       <li><a href="#">Inicio</a></li>
-                       <li><a href="./pages/nosotros.html">Nosotros</a></li>
-                       <li><a href="./pages/actividades.html">Actividades</a></li>
-                       <li><a href="./pages/galeria.html">Galeria</a></li>
-                       <li><a href="./pages/contacto.html">Contacto</a></li>
-                </ul>
+            
+            <div class="row">
+                <div class="col-sm-12 col-md-6 seccionFotos">
+                    <img src="./assets/img/Espectaculo.png"  class="indexFotos" alt="Imagen del teatro Colon, lugar icónico del espectáculo en Buenos Aires">
+                    <p class="fs-4 mt-2">Espectáculos</p>
+                </div>
+                <div class="col-sm-12 col-md-6 seccionFotos">
+                    <img src="./assets/img/Tango.png"  class="indexFotos" alt="Imagen de gente bailando Tango, evento cultural de la ciudad de Buenos Aires">
+                    <p class="fs-4 mt-2 ">Cultura de la ciudad de Buenos Aires</p>
+                </div>
             </div>
-            <div class="copyright">
-                <p>Copyright © <script>document.write(/\d{4}/.exec(Date())[0])</script> - Desarrollado por Joaquín</p>
+        </main>
+        </div>   
+
+        <footer class="container-fluid footerIndex pt-4"><!--Esto es el footer-->
+            <div class="row Redes d-flex justify-content-center">
+                <div class="col-1"><a href="https://www.instagram.com/" target="blank"><img src="./assets/img/instagram.png" alt="InstagramLogo"></a></div>
+                <div class="col-1"><a href="https://twitter.com"><img src="./assets/img/Twitter.png" alt="TwitterLogo"></a></div>
+                <div class="col-1"><a href="https://www.facebook.com/"><img src="./assets/img/Facebook.png" alt="FacebookLogo"></a></div>
+            </div>
+            <div class="row text-white text-center">
+                <p class="col fs-5 mt-4 copyright">Copyright © <script>document.write(/\d{4}/.exec(Date())[0])</script> - Desarrollado por Joaquín</p>
             </div>
         </footer>
         <script src="./js/bootstrap.bundle.min.js"></script>

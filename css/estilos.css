@@ -34,7 +34,9 @@ body{
     margin:0;
 
 }
-header {background-color: pink;
+header {background-color: #2F3437;
+        padding: 1rem;
+        width:100%;
 }
 .colorFondoHeader{background-color:transparent;
 }
@@ -47,70 +49,54 @@ header {background-color: pink;
 
 .hero {
     width: 100%;
-    height:120vh;
+    height:114.56vh;
     background-image:linear-gradient(90deg, rgba(0,0,0,1) 0%, rgba(0,0,0,0) 100%), url(../assets/img/background.png);
-    background-size: contain;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
 }
 
-
-header{
-    padding: 30px;
+.logo{
+    width:27rem
+}
+.MargenLogo{
+    margin-left:30px
 }
 
-.logo {
-    display:inline-block;
-    width:50%;
-
-}
-
-nav {
-    display:inline-block;
-    width:48%;
+.ColorNav {
     background: rgba(217, 217, 217, 0.51);
     border: 1px solid #FFFFFF;
     border-radius: 26.5px;
+
+    width: 43rem;
+    height: 4rem;
+     
 }
 
 
-nav ul li {
-    display:inline;
-    padding-left: 30px;
-    padding-right:30px;
-    font-family: 'Arial';
-font-style: normal;
-font-weight: 700;
-font-size: 16px;
-text-decoration: none;
+.titulosindex{
+    margin-top: 12rem
+}
 
+.h1index{
+    margin-top:20vh;
+    width:50%;
+    color: white;
+}
 
-
+.h2index{
+    width: 40%;
+    color: white;
+    margin-top:2vh;
+    margin-bottom: 5vh;
 }
 
 
-nav ul li a{
-    text-decoration: none;
-    color:white;
-}
-
-.titulos{
-    margin: 20vh 30px;
-}
-
-.titulos p{
-color:white;
-width:40%;
-margin-bottom: 50px
-}
-
-.titulos h1{
-    color:white;
-    width: 50%
-}
 h1 {
     font-family: 'Montserrat';
     font-style: normal;
-    font-weight: 400;
-    font-size: 46px;
+    font-weight: 500;
+    font-size: 63px;
     line-height: auto;
 }
 
@@ -118,25 +104,26 @@ p{
     font-family: 'Roboto';
     font-style: normal;
     font-weight: 400;
-    font-size: 16px;
+    font-size: 22px;
     line-height: 26px;
 }
 
 .boton{
     font-family: 'Montserrat';
-font-style: normal;
-font-weight: 400;
-font-size: 16px;
-color:white;
-margin: 0px 10px;
-padding:10px 35px;
-border-radius: 26.5px;
-text-decoration: none;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    color:white;
+    margin: 0px 10px;
+    padding:10px 35px;
+    border-radius: 26.5px;
+    text-decoration: none;
 }
 
 .boton1{
-background-color: #43A6D0;
-margin-top:60px
+    background-color: #43A6D0;
+    margin-top:60px;
+    margin-left: 75px;
 }
 
 .boton2{
@@ -144,79 +131,184 @@ margin-top:60px
     border: 1px solid white;
 }
 
-
-.seccionFotos{
-    padding:100px;
-    text-align:center;
-    background-image: url(../assets/img/background_section1.png);
-    background-size: contain
+.galeriaIndex{
+    margin-top:10rem;
 }
 
-.seccionFotos ul li{
-    list-style-type: none;
-    width:auto;
-    display:inline-block;
-    margin: 20px
+.seccionFotos{
+    margin-bottom: 50px;
+    text-align:center;
     
 }
 
-.seccionFotos ul li img{
-    width: 350px;
-    height: 350px;
+.rowMain{
+    width: 100vw
 }
 
-.seccionFotos ul li p{
+.indexFotos {
+    width: 30rem;
+    height: 30rem;
+    object-fit: cover;
+}
+
+.indexFotosTexto{
     display: block;
     width:auto;
-
 }
+.FondoMainInicio{
+    width: 100%;
+    height:130vh;
+    background-image: url(../assets/img/FondoVacaInicio.png);
+}
+
+
 
 footer{
     background-color: #2F3437;
-    
-    padding: 50px;
-
+    height:10rem;
+    width:100%;
 }
 
-.Redes{
+.contenedorRedes a{
+    color: white;
+    font-size: 10px;
+    text-decoration: none;
+    border-radius: 50%;
+    
+}
+
+.Redes{ 
     text-align: center
 }
 
-.Redes a {
-    padding: 10px;
+.fondoNosotrosTitulo {
+    width: 100%;
+    height:69vh;
+    background-image: linear-gradient(rgba(78, 78, 78, 0.412) 100%, rgba(78, 78, 78, 0.412) 100%), url(../assets/img/fondoNostrosTitulo.png);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
 }
 
-.footernav{
-text-align: center;
-margin-top:20px;
+.TextoNosotros{
+    margin-left:8.5rem;
+    margin-top: 5rem;
+    width: 55vw
 }
 
-
-.footernav ul li {
-    display:inline;
-    padding-left: 30px;
-    padding-right:30px;
-    font-family: 'Arial';
-font-style: normal;
-font-weight: 700;
-font-size: 16px;
-text-decoration: none;
-
-
+.TextoNosotros h2{
+    color: #39B4E9
+    
 }
 
+.ImagenesNosotros{
+    margin-top: 50px;
+    margin-bottom: 20px;
+    }
 
-.footernav ul li a{
-    text-decoration: none;
-    color:white;
-    font-family: 'Roboto';
-    font-style: normal;
-    font-weight: 400;
-    font-size: 16px;
-    line-height: 26px;
+.TextoNosotros2{
+    margin-left:8.5rem;
+    width: 85vw
 }
 
-.copyright{
-    color: white;
-    text-align: center;
+.FondoMainNosotros{
+    width: 100%;
+    height:150vh;
+    background-image: url(../assets/img/FondoVacaNosotros.png);
+    background-size: cover;
+    
+}
+
+/*cuando es un celular */
+@media screen and (max-width: 768px){
+    .logo{
+        width:20rem;
+    } 
+    .h1index{
+        font-size:3rem;
+        width:90vw;
+        margin-top:70vh;
+    }
+    .h2index{
+        color:#ffffff00
+    }
+    .boton{
+        color: #2f343700;
+        background-color: #2f343700;
+        border-color:#2f343700;
+    }
+
+
+    .footerIndex{
+        margin-top:100rem;
+        height:10rem;
+    }
+
+    .Redes{
+        justify-content: center;
+    }
+
+
+    .FondoMainInicio{
+        background-size: contain;
+        background-repeat: repeat;
+    }
+
+    .galeriaIndex{
+        margin-top:2rem;
+    }
+
+    /*nosotros*/
+    .fuenteTitulo{
+        font-size:2.9rem;
+    }
+
+    .TextoNosotros{
+        margin-left:1rem;
+        width:95%
+    }
+
+    .TextoNosotros2{
+        margin-left:1rem;
+    }
+
+    .footerNosotros{
+        margin-top: 80rem;
+    }
+
+
+   /* .col-info {
+       width:100%;
+       height: 100%;
+       padding:1rem;
+    }
+    .parrafoNosotros{
+        font-size: 1.2rem;
+        line-height: 2.0;
+    }
+    .titulo{
+        font-size: 2.5rem;
+        text-align: center;
+    }
+    .titulo span{
+       display:inline;
+    }
+    .ocultar{
+        display: none;
+    }
+    /* pagina contacto*/
+ /*   .contenedorMain{
+       padding: 20px;  
+    }
+     
+    .contact-box{
+        grid-template-columns: 1fr;
+    }
+    .left{
+        background-size: cover;
+        height: 100%;
+    }
+    .right{
+        padding: 25px 20px;
+    }
 }

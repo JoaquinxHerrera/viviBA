@@ -5,32 +5,46 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Actividades</title>
+    <link rel="stylesheet" href="../css/all.min.css">
     <link rel="shortcut icon" href="../favicon.ico">
     <link href="../css/bootstrap.min.css" rel="stylesheet">
     <link rel="stylesheet" href="../css/estilos.css">
 </head>
 <body>
-    
-</body>
-</html>
-<body>
-    <header><!--Esto es el header-->
-        <div class="logo">
-            <img src="../assets/img/logo.png" alt="Logo viviBA">
-        </div>
-        <nav>
-            <ul>
-                <li><a href="../index.html">Inicio</a></li>
-                <li><a href="../pages/nosotros.html">Nosotros</a></li>
-                <li><a href="#">Actividades</a></li>
-                <li><a href="../pages/galeria.html">Galeria</a></li>      
-                <li><a href="../pages/contacto.html">Contacto</a></li>
-            </ul>
+    <header class="container-fluid"><!--Esto es el header-->
+        <nav class="navbar slide navbar-expand-lg navbar-dark">
+            <div class="container-fluid">
+                <a class="navbar-brand" href="../index.html">
+                    <img class="logo"src="../assets/img/logo.png" alt="Logo viviBA" >
+                </a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav mb-lg-0 d-flex ms-auto justify-content-evenly  ColorNav"><!--no se como sacarle el borde del nav cuando pasa a hamburguesa, analizar para proxima entregaS-->
+                        <li class="nav-item">
+                            <a class="nav-link active fs-4" aria-current="page" href="../index.html">Inicio</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link active fs-4" href="../pages/nosotros.html">Nosotros</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link active fs-4" href="../pages/actividades.html">Actividades</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link active fs-4" href="../pages/galeria.html">Galeria</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link active fs-4" href="../pages/contacto.html">Contacto</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
         </nav>
     </header>
     <main><!--Esto es el main-->
         <section>
-            <h1>Actividades</h1><!--Lleva una imagen de fondo-->
+            <h1>Actividades</h1>
         </section>
         <div class="item_historia">
             <div class="item_historia_izq">
@@ -40,10 +54,10 @@
 
             <div>
                 <ul>
-                    <li>Bus Turístico: Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequuntur harum dolores reprehenderit? Velit quidem ea quae repudiandae</li>
-                    <li>Recorrer la Boca: Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequuntur harum dolores reprehenderit? Velit quidem ea quae repudiandae</li>
-                    <li>Visita al Colon: Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequuntur harum dolores reprehenderit? Velit quidem ea quae repudiandae</li>
-                    <li>Cementerio de Recoleta: Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequuntur harum dolores reprehenderit? Velit quidem ea quae repudiandae</li>
+                    <li>Bus Turístico: Una manera muy sencilla y rápida de conocer la ciudad sin tener que estar preocupandose por el transporte</li>
+                    <li>Recorrer la Boca: Es un barrio clásico de Buenos Aires donde abunda la cultura, el tango y el asado.</li>
+                    <li>Visita al Colon: Una visita guiada por el histórico teatro Colon, donde podras ver el mismo desde un angulo que nunca habias visto.</li>
+                    <li>Cementerio de Recoleta: Es un famoso cementerio de la ciudad de Buenos Aires, Argentina. Está ubicado en el barrio de Recoleta y contiene las tumbas de personas muy reconocidas.</li>
                 </ul>
             </div>
             <div class="item_gastronomía">
@@ -54,10 +68,9 @@
     
                 <div>
                     <ul>
-                        <li>Rooftops: Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequuntur harum dolores reprehenderit? Velit quidem ea quae repudiandae</li>
-                        <li>Bares escondidos: Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequuntur harum dolores reprehenderit? Velit quidem ea quae repudiandae</li>
-                        <li>Gastronomía de autor: Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequuntur harum dolores reprehenderit? Velit quidem ea quae repudiandae</li>
-                        <li>Clásicos: Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequuntur harum dolores reprehenderit? Velit quidem ea quae repudiandae</li>
+                        <li>Rooftops: Una manera extraordinaria de aprovechar las vistas que ofrece la hermosa ciudad de Buenos Aires acompañandolo de cocktails</li>
+                        <li>Bares escondidos: Bares exclusivos con temáticas particulares en donde podras disfrutar de gastronomía de autor</li>
+                        <li>Clásicos: No podes dejar de probar los clásicos gastrónomicos de Argentina como el asado, vino y empanadas.</li>
                     </ul>
                 </div>
                 <div class="item_espectáculos">
@@ -68,9 +81,9 @@
         
                     <div>
                         <ul>
-                            <li>Conciertos: Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequuntur harum dolores reprehenderit? Velit quidem ea quae repudiandae</li>
-                            <li>Teatro Colon: Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequuntur harum dolores reprehenderit? Velit quidem ea quae repudiandae</li>
-                            <li>Partidos de futbol: Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequuntur harum dolores reprehenderit? Velit quidem ea quae repudiandae</li>
+                            <li>Conciertos: Siendo la capital del país, Buenos Aires concentra todos los eventos y recepcion de artistas de todos el mundo.</li>
+                            <li>Teatro Colon: No podes perderte la experiencia única de disfrutar una obra en el histórico teatro Colon</li>
+                            <li>Tango: la ciudad de Buenos Aires abundan los eventos de Tango en donde podras ir y apreciar a gente bailando o hasta demostrar tus habilidades.</li>
                         </ul>
                     </div>
 
@@ -82,31 +95,22 @@
             
                         <div>
                             <ul>
-                                <li>Lorem: Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequuntur harum dolores reprehenderit? Velit quidem ea quae repudiandae</li>
-                                <li>Lorem: Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequuntur harum dolores reprehenderit? Velit quidem ea quae repudiandae</li>
-                                <li>Lorem: Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequuntur harum dolores reprehenderit? Velit quidem ea quae repudiandae</li>
+                                <li>Museos: Ya sea de arte, historia, ciencia, esta ciudad cuenta con museos imperdibles</li>
+                                <li>Partidos de futbol: Tierra de Messi y Maradona, que mejor lugar para disfrutar de un partido de futbol, experimentando la pasión del pueblo Argentino</li>
+                                <li>Hipódromo: El hipódromo de palermo es un lugar en el que podras disfrutar tanto de carreras como eventos de alto nivel</li>
                             </ul>
                         </div>
 
         </div>
     </main>
-    <footer><!--Esto es el footer-->
-        <div class="Redes">
-            <a href="https://www.instagram.com/" target="blank"><img src="../assets/img/instagram.png" alt="InstagramLogo"></a>
-            <a href="https://twitter.com"><img src="../assets/img/Twitter.png" alt="TwitterLogo"></a>
-            <a href="https://www.facebook.com/"><img src="../assets/img/Facebook.png" alt="FacebookLogo"></a>
+    <footer class="container-fluid footer pt-4"><!--Esto es el footer-->
+        <div class="row Redes d-flex justify-content-center">
+            <div class="col-1"><a href="https://www.instagram.com/" target="blank"><img src="../assets/img/instagram.png" alt="InstagramLogo"></a></div>
+            <div class="col-1"><a href="https://twitter.com"><img src="../assets/img/Twitter.png" alt="TwitterLogo"></a></div>
+            <div class="col-1"><a href="https://www.facebook.com/"><img src="../assets/img/Facebook.png" alt="FacebookLogo"></a></div>
         </div>
-        <div class="footernav">
-            <ul>
-                   <li><a href="../index.html">Inicio</a></li>
-                   <li><a href="../pages/nosotros.html">Nosotros</a></li>
-                   <li><a href="#">Actividades</a></li>
-                   <li><a href="../pages/galeria.html">Galeria</a></li>
-                   <li><a href="../pages/contacto.html">Contacto</a></li>
-            </ul>
-        </div>
-        <div class="copyright">
-            <p>Copyright © <script>document.write(/\d{4}/.exec(Date())[0])</script> - Desarrollado por Joaquín</p>
+        <div class="row text-white text-center">
+            <p class="col fs-5 mt-4 copyright">Copyright © <script>document.write(/\d{4}/.exec(Date())[0])</script> - Desarrollado por Joaquín</p>
         </div>
     </footer>
     <script src="../js/bootstrap.bundle.min.js"></script>

@@ -5,67 +5,89 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Nosotros</title>
+    <link rel="stylesheet" href="../css/all.min.css">
     <link rel="shortcut icon" href="../favicon.ico">
     <link href="../css/bootstrap.min.css" rel="stylesheet">
     <link rel="stylesheet" href="../css/estilos.css">
 </head>
 <body>
-<header><!--Esto es el header-->
-    <div class="logo">
-        <img src="../assets/img/logo.png" alt="Logo viviBA">
-    </div>
-        <nav>
-             <ul>
-                    <li><a href="../index.html">Inicio</a></li>
-                    <li><a href="#">Nosotros</a></li>
-                    <li><a href="../pages/actividades.html">Actividades</a></li>
-                    <li><a href="../pages/galeria.html">Galeria</a></li>
-                    <li><a href="../pages/contacto.html">Contacto</a></li>
-             </ul>
+    <header class="container-fluid"><!--Esto es el header-->
+        <nav class="navbar slide navbar-expand-lg navbar-dark">
+            <div class="container-fluid">
+                <a class="navbar-brand" href="../index.html">
+                    <img class="logo"src="../assets/img/logo.png" alt="Logo viviBA" >
+                </a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav mb-lg-0 d-flex ms-auto justify-content-evenly  ColorNav"><!--no se como sacarle el borde del nav cuando pasa a hamburguesa, analizar para proxima entregaS-->
+                        <li class="nav-item">
+                            <a class="nav-link active fs-4" aria-current="page" href="../index.html">Inicio</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link active fs-4" href="nosotros.html">Nosotros</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link active fs-4" href="actividades.html">Actividades</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link active fs-4" href="galeria.html">Galeria</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link active fs-4" href="contacto.html">Contacto</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
         </nav>
-</header>
-<main><!--Esto es el main-->
-<section>
-    <h1>¿Quiénes somos?</h1><!--Lleva una foto de fondo-->
-</section>
+    </header>
+    <section class="fondoNosotrosTitulo text-white">
+        <h1 class="px-5 pt-5 fuenteTitulo">¿Quiénes somos?</h1><!--Lleva una foto de fondo-->
+    </section>
+    <main class="container-fluid FondoMainNosotros"><!--Esto es el main-->
+        <div class="row">
+            <div class="col">
+                <section class="TextoNosotros">
+                    <h2 class="fs-1 mb-4">Acerca de nosotros</h2>
+                    <p>Solemos acostumbrarnos a la rutina y siempre movernos por los mismos sitios, ya sea por comodidad o por desconocimiento, solemos pasar por alto lugares increibles de Buenos Aires que estaban frente a nosotros. Siendo ciudadanos de la ciudad de Buenos Aires queremos abrirles los ojos y enseñarles todas las oportunidades que esta ciudad ofrece, ya sea gastronomía, espectaculos, historia, entre otros.</p>
+                </section>
+            </div>
+        </div>
 
-<section>
-    <div>
-        <h2>Acerca de nosotros</h2>
-        <p>Solemos acostumbrarnos a la rutina y siempre movernos por los mismos sitios, ya sea por comodidad o por desconocimiento, solemos pasar por alto lugares increibles de Buenos Aires que estaban frente a nosotros. Siendo ciudadanos de la ciudad de Buenos Aires queremos abrirles los ojos y enseñarles todas las oportunidades que esta ciudad ofrece, ya sea gastronomía, espectaculos, historia, entre otros.</p>
-    </div>
-    <div>
-        <img src="../assets/img/FotoContacto.png" alt="FotoDeLaCiudad1">
-        <img src="../assets/img/Galeriahistoria1.png" alt="FotoDeLaCiudad2">
-        <img src="../assets/img/GaleriaHistoria2.png" alt="FotoDeLaCiudad3">
-    </div>
-    <div>
-        <p>Queres sorprender a tus amigos o pareja? Enseñarle la ciudad a algun familiar de otro país? Esta va a ser tu guía para que puedas quedar bien con quien quieras y siempre tener una experiencia optima.</p>
-    </div>
-    <div>
-        <iframe width="560" height="315" src="https://www.youtube.com/embed/-4TFRAdhqxE" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
-    </div>
-</section>
-</main>
-<footer><!--Esto es el footer-->
-    <div class="Redes">
-        <a href="https://www.instagram.com/" target="blank"><img src="../assets/img/instagram.png" alt="InstagramLogo"></a>
-        <a href="https://twitter.com"><img src="../assets/img/Twitter.png" alt="TwitterLogo"></a>
-        <a href="https://www.facebook.com/"><img src="../assets/img/Facebook.png" alt="FacebookLogo"></a>
-    </div>
-    <div class="footernav">
-        <ul>
-               <li><a href="../index.html">Inicio</a></li>
-               <li><a href="#">Nosotros</a></li>
-               <li><a href="../pages/actividades.html">Actividades</a></li>
-               <li><a href="../pages/galeria.html">Galeria</a></li>
-               <li><a href="../pages/contacto.html">Contacto</a></li>
-        </ul>
-    </div>
-    <div class="copyright">
-        <p>Copyright © <script>document.write(/\d{4}/.exec(Date())[0])</script> - Desarrollado por Joaquín</p>
-    </div>
-</footer>
+        <div class="row">
+            <div class="col-sm-12 col-md-4 d-flex seccionFotos justify-content-evenly ImagenesNosotros">
+                <img class="indexFotos" src="../assets/img/FotoNosotros1.jpg" alt="FotoDeLaCiudad1">
+            </div>
+            <div class="col-sm-12 col-md-4 seccionFotos ImagenesNosotros">
+                <img class="indexFotos" src="../assets/img/FotoNosotros2.jpg" alt="FotoDeLaCiudad2">
+            </div>
+            <div class="col-sm-12 col-md-4 seccionFotos ImagenesNosotros">
+                <img class="indexFotos" src="../assets/img/FotosNosotros3.jpg" alt="FotoDeLaCiudad3">
+            </div>
+        </div>
+        <div class="row">   
+            <div class="col TextoNosotros2">
+                <p>Queres sorprender a tus amigos o pareja? Enseñarle la ciudad a algun familiar de otro país? Esta va a ser tu guía para que puedas quedar bien con quien quieras y siempre tener una experiencia óptima.</p>
+            </div>
+        </div>
+        <div class="row video">
+            <div class="col d-flex justify-content-center mt-5">
+                <iframe width="560" height="315" src="https://www.youtube.com/embed/kz_OU17Os3U" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+            </div>
+            
+        </div>
+    </main>
+    <footer class="container-fluid footerNosotros pt-4"><!--Esto es el footer-->
+        <div class="row Redes d-flex justify-content-center">
+            <div class="col-1"><a href="https://www.instagram.com/" target="blank"><img src="../assets/img/instagram.png" alt="InstagramLogo"></a></div>
+            <div class="col-1"><a href="https://twitter.com"><img src="../assets/img/Twitter.png" alt="TwitterLogo"></a></div>
+            <div class="col-1"><a href="https://www.facebook.com/"><img src="../assets/img/Facebook.png" alt="FacebookLogo"></a></div>
+        </div>
+        <div class="row text-white text-center">
+            <p class="col fs-5 mt-4 copyright">Copyright © <script>document.write(/\d{4}/.exec(Date())[0])</script> - Desarrollado por Joaquín</p>
+        </div>
+    </footer>
 <script src="../js/bootstrap.bundle.min.js"></script>
 </body>
 </html>
