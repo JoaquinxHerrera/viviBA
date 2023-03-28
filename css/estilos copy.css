@@ -224,12 +224,6 @@ footer{
     .logo{
         width:20rem;
     } 
-
-    .ColorNav{
-        padding-left:1rem;
-        width:11rem;
-        height: 16rem;
-    }
     .h1index{
         font-size:3rem;
         width:90vw;
@@ -246,7 +240,8 @@ footer{
 
 
     .footerIndex{
-        margin-top: 210vh;
+        margin-top:100rem;
+        height:10rem;
     }
 
     .Redes{
@@ -278,7 +273,7 @@ footer{
     }
 
     .footerNosotros{
-        margin-top: 180vh;
+        margin-top: 80rem;
     }
 
 
