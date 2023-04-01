@@ -4,14 +4,19 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <meta name="description" content="Conoce un poco de todas las oportunidades que ofrece la ciudad de Buenos Aires.">
+    <meta name="keywords" content="Buenos Aires, Actividades, Entretenimiento, Noche, Argentina, Recorrido, Tour, Guia, viviBA">
+    <title>Galeria</title>
     <link rel="stylesheet" href="../css/all.min.css">
     <link rel="shortcut icon" href="../favicon.ico">
     <link href="../css/bootstrap.min.css" rel="stylesheet">
-    <link rel="stylesheet" href="../css/estilos.css">
+    <link href="css/hover.css" rel="stylesheet" media="all">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
+    <link rel="stylesheet" href="../scss/estilos.css">
+    
 </head>
 <body>
-    <header class="container-fluid"><!--Esto es el header-->
+    <header class="container-fluid headerPaginas"><!--Esto es el header-->
         <nav class="navbar slide navbar-expand-lg navbar-dark">
             <div class="container-fluid">
                 <a class="navbar-brand" href="../index.html">
@@ -22,73 +27,95 @@
                 </button>
                 <div class="collapse navbar-collapse" id="navbarSupportedContent">
                     <ul class="navbar-nav mb-lg-0 d-flex ms-auto justify-content-evenly  ColorNav"><!--no se como sacarle el borde del nav cuando pasa a hamburguesa, analizar para proxima entregaS-->
-                        <li class="nav-item">
-                            <a class="nav-link active fs-4" aria-current="page" href="../index.html">Inicio</a>
+                        <li class="nav-item ">
+                            <a class="nav-link active fs-4 hvr-underline-from-center" aria-current="page" href="../index.html">Inicio</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link active fs-4" href="../pages/nosotros.html">Nosotros</a>
+                            <a class="nav-link active fs-4 hvr-underline-from-center" href="../pages/nosotros.html">Nosotros</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link active fs-4" href="../pages/actividades.html">Actividades</a>
+                            <a class="nav-link active fs-4 hvr-underline-from-center" href="../pages/actividades.html">Actividades</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link active fs-4" href="../pages/galeria.html">Galeria</a>
+                            <a class="nav-link active fs-4 hvr-underline-from-center" href="../pages/galeria.html">Galeria</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link active fs-4" href="../pages/contacto.html">Contacto</a>
+                            <a class="nav-link active fs-4 hvr-underline-from-center" href="../pages/contacto.html">Contacto</a>
                         </li>
                     </ul>
                 </div>
             </div>
         </nav>
     </header>
-    <main><!--Esto es el main-->
-        <section>
-            <h1>Galeria</h1><!--Lleva una imagen de fondo-->
-        </section>
-        <div class="GaleriaHistoria">
-            <h3>Historia</h3>
-            <div class="GaleriaHistoriaFotos">
-                <img src="../assets/img/Galeriahistoria1.png" alt="FotoHistoria">
-                <img src="../assets/img/Galeriahistoria2.png" alt="FotoHistoria">
-                <img src="../assets/img/Galeriahistoria3.png" alt="FotoHistoria">
-
-            </div>
+    <section class="fondoGaleriaTitulo text-white">
+        <h1 class="px-5 pt-5 fuenteTitulo">Galeria</h1><!--Lleva una foto de fondo-->
+    </section>
+    <main class="container-fluid pt-5 pb-5 FondoMainGaleria"><!--Esto es el main-->
+        <div class="row">
+            <h3 class="mb-4 text-center">Historia</h3>      
         </div>
-        <div class="GaleriaGastronomía">
-            <h3>Gastronomía</h3>
-            <div class="GaleriaGastronomíaFotos">
-                <img src="../assets/img/GaleriaGastro1.png" alt="FotoGastronomía" class="GalGasFot1"> 
-                <img src="../assets/img/GaleriaGastro2.png" alt="FotoGastronomía">
-                <img src="../assets/img/GaleriaGastro3.png" alt="FotoGastronomía">
-
+        <div class="row mb-4">
+            <div class="col-sm-12 col-md-4 d-flex justify-content-around">
+                <img class="indexFotos margenMobil hvr-grow" src="../assets/img/Galeriahistoria1.png" alt="FotoHistoria">
             </div>
-        </div>
-        <div class="GaleriaEspectáculos">
-            <h3>Espectáculos</h3>
-            <div class="GaleriaEspectáculosFotos">
-                <img src="../assets/img/GaleriaEspecta1.png" alt="FotoEspectáculos">
-                <img src="../assets/img/GaleriaEspecta2.png" alt="FotoEspectáculos">
-                <img src="../assets/img/GaleriaEspecta3.png" alt="FotoEspectáculos">
-
+            <div class="col-sm-12 col-md-4 d-flex justify-content-around">
+                <img class="indexFotos margenMobil hvr-grow" src="../assets/img/Galeriahistoria2.png" alt="FotoHistoria">
             </div>
-        </div>
-        <div class="GaleriaActividades">
-            <h3>Actividades</h3>
-            <div class="GaleriaActividadesFotos">
-                <img src="../assets/img/GaleriaAct1.png" alt="FotoActividades">
-                <img src="../assets/img/GaleriaAct2.png" alt="FotoActividades">
-                <img src="../assets/img/GaleriaAct3.png" alt="FotoActividades">
-
+            <div class="col-sm-12 col-md-4 d-flex justify-content-around">
+                <img class="indexFotos margenMobil hvr-grow" src="../assets/img/Galeriahistoria3.png" alt="FotoHistoria">
             </div>
         </div>
 
+        <div class="row">
+            <h3 class="mb-4 text-center">Gastronomía</h3>      
+        </div>
+        <div class="row mb-4">
+            <div class="col-sm-12 col-md-4 d-flex justify-content-around">
+                <img class="indexFotos margenMobil hvr-grow" src="../assets/img/GaleriaGastro1.png" alt="FotoHistoria">
+            </div>
+            <div class="col-sm-12 col-md-4 d-flex justify-content-around">
+                <img class="indexFotos margenMobil hvr-grow" src="../assets/img/GaleriaGastro2.png" alt="FotoHistoria">
+            </div>
+            <div class="col-sm-12 col-md-4 d-flex justify-content-around">
+                <img class="indexFotos margenMobil hvr-grow" src="../assets/img/GaleriaGastro3.png" alt="FotoHistoria">
+            </div>
+        </div>
+        
+        <div class="row">
+            <h3 class="mb-4 text-center">Espectáculos</h3>      
+        </div>
+        <div class="row mb-4">
+            <div class="col-sm-12 col-md-4 d-flex justify-content-around">
+                <img class="indexFotos margenMobil hvr-grow" src="../assets/img/GaleriaEspecta1.png" alt="FotoHistoria">
+            </div>
+            <div class="col-sm-12 col-md-4 d-flex justify-content-around">
+                <img class="indexFotos margenMobil hvr-grow" src="../assets/img/GaleriaEspecta2.png" alt="FotoHistoria">
+            </div>
+            <div class="col-sm-12 col-md-4 d-flex justify-content-around">
+                <img class="indexFotos margenMobil hvr-grow" src="../assets/img/GaleriaEspecta3.png" alt="FotoHistoria">
+            </div>
+        </div>
+        
+        <div class="row">
+            <h3 class="mb-4 text-center">Actividades</h3>      
+        </div>
+        <div class="row mb-4">
+            <div class="col-sm-12 col-md-4 d-flex justify-content-around">
+                <img class="indexFotos margenMobil hvr-grow" src="../assets/img/GaleriaAct1.png" alt="FotoHistoria">
+            </div>
+            <div class="col-sm-12 col-md-4 d-flex justify-content-around">
+                <img class="indexFotos margenMobil hvr-grow" src="../assets/img/GaleriaAct2.png" alt="FotoHistoria">
+            </div>
+            <div class="col-sm-12 col-md-4 d-flex justify-content-around">
+                <img class="indexFotos margenMobil hvr-grow" src="../assets/img/GaleriaAct3.png" alt="FotoHistoria">
+            </div>
+        </div>
     </main>
     <footer class="container-fluid footer pt-4"><!--Esto es el footer-->
         <div class="row Redes d-flex justify-content-center">
-            <div class="col-1"><a href="https://www.instagram.com/" target="blank"><img src="../assets/img/instagram.png" alt="InstagramLogo"></a></div>
-            <div class="col-1"><a href="https://twitter.com"><img src="../assets/img/Twitter.png" alt="TwitterLogo"></a></div>
-            <div class="col-1"><a href="https://www.facebook.com/"><img src="../assets/img/Facebook.png" alt="FacebookLogo"></a></div>
+            <div class="col-1"><a href="https://www.instagram.com/" target="blank" class="hvr-grow"><img src="../assets/img/instagram.png" alt="InstagramLogo"></a></div>
+            <div class="col-1"><a href="https://twitter.com" target="blank" class="hvr-grow"><img src="../assets/img/Twitter.png" alt="TwitterLogo"></a></div>
+            <div class="col-1"><a href="https://www.facebook.com/" target="blank" class="hvr-grow"><img src="../assets/img/Facebook.png" alt="FacebookLogo"></a></div>
         </div>
         <div class="row text-white text-center">
             <p class="col fs-5 mt-4 copyright">Copyright © <script>document.write(/\d{4}/.exec(Date())[0])</script> - Desarrollado por Joaquín</p>

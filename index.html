@@ -4,15 +4,20 @@
         <meta charset="UTF-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta name="description" content="viviBA es un proyecto mediante el cual queremos compartir todas las oportunidades que ofrece la ciudad de Buenos Aires, ya sea para gente extranjera que conoce la ciudad por primera vez como para aquellos que vivieron toda su vida.">
+        <meta name="keywords" content="Buenos Aires, Actividades, Entretenimiento, Noche, Argentina, Recorrido, Tour, Guia, viviBA">
         <title>viviBA</title>
         <script src="https://kit.fontawesome.com/35b5a77d4f.js" crossorigin="anonymous"></script>
         <link rel="shortcut icon" href="./favicon.ico">
         <link href="./css/bootstrap.min.css" rel="stylesheet">
-        <link rel="stylesheet" href="./css/estilos.css">
+        <link href="css/hover.css" rel="stylesheet" media="all">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
+        <link rel="stylesheet" href="./scss/estilos.css">
+        
     </head>
     <body>
         <div class="hero">
-            <header class="colorFondoHeader"><!--Esto es el header-->
+            <header class="colorFondoHeader headerIndex"><!--Esto es el header-->
                 <nav class="navbar slide navbar-expand-lg navbar-dark">
                     <div class="container-fluid">
                         <a class="navbar-brand" href="index.html">
@@ -22,72 +27,71 @@
                             <span class="navbar-toggler-icon"></span>
                         </button>
                         <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                            <ul class="navbar-nav mb-lg-0 d-flex ms-auto justify-content-evenly  ColorNav"><!--no se como sacarle el borde del nav cuando pasa a hamburguesa, analizar para proxima entregaS-->
+                            <ul class="navbar-nav mb-lg-0 d-flex ms-auto justify-content-evenly  ColorNav "><!--no se como sacarle el borde del nav cuando pasa a hamburguesa, analizar para proxima entregaS-->
                                 <li class="nav-item">
-                                    <a class="nav-link active fs-4" aria-current="page" href="#">Inicio</a>
+                                    <a class="nav-link active fs-4 hvr-underline-from-center" aria-current="page" href="#">Inicio</a>
                                 </li>
                                 <li class="nav-item">
-                                    <a class="nav-link active fs-4" href="./pages/nosotros.html">Nosotros</a>
+                                    <a class="nav-link active fs-4 hvr-underline-from-center" href="./pages/nosotros.html">Nosotros</a>
                                 </li>
                                 <li class="nav-item">
-                                    <a class="nav-link active fs-4" href="./pages/actividades.html">Actividades</a>
+                                    <a class="nav-link active fs-4 hvr-underline-from-center" href="./pages/actividades.html">Actividades</a>
                                 </li>
                                 <li class="nav-item">
-                                    <a class="nav-link active fs-4" href="./pages/galeria.html">Galeria</a>
+                                    <a class="nav-link active fs-4 hvr-underline-from-center" href="./pages/galeria.html">Galeria</a>
                                 </li>
                                 <li class="nav-item">
-                                    <a class="nav-link active fs-4" href="./pages/contacto.html">Contacto</a>
+                                    <a class="nav-link active fs-4 hvr-underline-from-center" href="./pages/contacto.html">Contacto</a>
                                 </li>
                             </ul>
                         </div>
                     </div>
                 </nav>
             </header>
-            
-            
+
             <section id="titulo" class="titulosindex">
-                    <h1 class="MargenLogo h1index">Descubrí las mejores actividades de Buenos Aires</h1>
-                    <p class="MargenLogo h2index">Solemos acostumbrarnos a la rutina y siempre movernos por los mismos sitios, ya sea por comodidad o por   desconocimiento, solemos pasar.</p>
-                    <a href="./pages/contacto.html" class="boton boton1 fw-bold">Suscribete</a>
-                    <a href="./pages/actividades.html" class="boton boton2 fw-bold">Ver más</a>
+                <h1 class="MargenLogo h1index">Descubrí las mejores actividades de Buenos Aires</h1>
+                <p class="MargenLogo h2index">Solemos acostumbrarnos a la rutina y siempre movernos por los mismos sitios, ya sea por comodidad o por   desconocimiento, solemos pasar por alto cosas únicas de esta ciudad.</p>
+                <a href="./pages/contacto.html" class="boton boton1 fw-bold hvr-reveal-index">Suscribete</a>
+                <a href="./pages/actividades.html" class="boton boton2 fw-bold hvr-reveal-index">Ver más</a>
             </section>
         
         </div>
         <div class="FondoMainInicio">
-        <main class="container galeriaIndex"><!--Esto es el main-->
-            <div class="row"><!--Agregarle efecto a las fotos, ej:hover-->
-                <div class="col-sm-12 col-md-4  seccionFotos" >
-                    <img src="./assets/img/Cabildo.png" class="indexFotos" alt="Imagen del cabildo, un ejemplo de los lugares históricos para visitar en Buenos Aires">
-                    <p class="fs-4 mt-2">Lugares históricos que conocer en Buenos Aires</p>
+            <main class="container  galeriaIndex"><!--Esto es el main-->
+                <div class="row"><!--Agregarle efecto a las fotos, ej:hover-->
+                    <div class="col-sm-12 col-md-4  seccionFotos" >
+                        <img src="./assets/img/Cabildo.png" class="indexFotos" alt="Imagen del cabildo, un ejemplo de los lugares históricos para visitar en Buenos Aires">
+                        <p class="fs-4 mt-2">Lugares históricos que conocer en Buenos Aires</p>
+                    </div>
+                    <div class="col-sm-12 col-md-4 seccionFotos">
+                        <img src="./assets/img/rooftop.png"  class="indexFotos" alt="Imagen nocturna de un rooftop de Buenos Aires, ideal para ir a tommar algo">
+                        <p class="fs-4 mt-2">Los mejores rooftops de la ciudad</p>
+                    </div>
+                    <div class="col-sm-12 col-md-4 seccionFotos">
+                        <img src="./assets/img/Gastronomia.png"  class="indexFotos " alt="Imagen de asado, gastronomia clásica de Argentina">
+                        <p class="fs-4 mt-2">Gastronomía recomendada</p>
+                    </div>
                 </div>
-                <div class="col-sm-12 col-md-4 seccionFotos">
-                    <img src="./assets/img/rooftop.png"  class="indexFotos" alt="Imagen nocturna de un rooftop de Buenos Aires, ideal para ir a tommar algo">
-                    <p class="fs-4 mt-2">Los mejores rooftops de la ciudad</p>
+                
+                <div class="row">
+                    <div class="col-sm-12 col-md-6 seccionFotos">
+                        <img src="./assets/img/Espectaculo.png"  class="indexFotos" alt="Imagen del teatro Colon, lugar icónico del espectáculo en Buenos Aires">
+                        <p class="fs-4 mt-2">Espectáculos</p>
+                    </div>
+                    <div class="col-sm-12 col-md-6 seccionFotos">
+                        <img src="./assets/img/Tango.png"  class="indexFotos" alt="Imagen de gente bailando Tango, evento cultural de la ciudad de Buenos Aires">
+                        <p class="fs-4 mt-2 ">Cultura de la ciudad de Buenos Aires</p>
+                    </div>
                 </div>
-                <div class="col-sm-12 col-md-4 seccionFotos">
-                    <img src="./assets/img/Gastronomia.png"  class="indexFotos " alt="Imagen de asado, gastronomia clásica de Argentina">
-                    <p class="fs-4 mt-2">Gastronomía recomendada</p>
-                </div>
-            </div>
-            
-            <div class="row">
-                <div class="col-sm-12 col-md-6 seccionFotos">
-                    <img src="./assets/img/Espectaculo.png"  class="indexFotos" alt="Imagen del teatro Colon, lugar icónico del espectáculo en Buenos Aires">
-                    <p class="fs-4 mt-2">Espectáculos</p>
-                </div>
-                <div class="col-sm-12 col-md-6 seccionFotos">
-                    <img src="./assets/img/Tango.png"  class="indexFotos" alt="Imagen de gente bailando Tango, evento cultural de la ciudad de Buenos Aires">
-                    <p class="fs-4 mt-2 ">Cultura de la ciudad de Buenos Aires</p>
-                </div>
-            </div>
-        </main>
+            </main>
         </div>   
 
-        <footer class="container-fluid footerIndex pt-4"><!--Esto es el footer-->
+        <footer class="container-fluid pt-4"><!--Esto es el footer-->
             <div class="row Redes d-flex justify-content-center">
-                <div class="col-1"><a href="https://www.instagram.com/" target="blank"><img src="./assets/img/instagram.png" alt="InstagramLogo"></a></div>
-                <div class="col-1"><a href="https://twitter.com"><img src="./assets/img/Twitter.png" alt="TwitterLogo"></a></div>
-                <div class="col-1"><a href="https://www.facebook.com/"><img src="./assets/img/Facebook.png" alt="FacebookLogo"></a></div>
+                <div class="col-1"><a href="https://www.instagram.com/" target="blank" class="hvr-grow"><img src="./assets/img/instagram.png" alt="InstagramLogo"></a></div>
+                <div class="col-1"><a href="https://twitter.com" target="blank" class="hvr-grow"><img src="./assets/img/Twitter.png" alt="TwitterLogo"></a></div>
+                <div class="col-1"><a href="https://www.facebook.com/" target="blank" class="hvr-grow"><img src="./assets/img/Facebook.png" alt="FacebookLogo"></a></div>
             </div>
             <div class="row text-white text-center">
                 <p class="col fs-5 mt-4 copyright">Copyright © <script>document.write(/\d{4}/.exec(Date())[0])</script> - Desarrollado por Joaquín</p>

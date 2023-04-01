@@ -4,14 +4,19 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="En viviBA somos ciudadanos comunes de la ciudad de Buenos Aires que quieren compartir todo lo que esconde esta bella ciudad.">
+    <meta name="keywords" content="Buenos Aires, Actividades, Entretenimiento, Noche, Argentina, Recorrido, Tour, Guia, viviBA">
     <title>Nosotros</title>
     <link rel="stylesheet" href="../css/all.min.css">
     <link rel="shortcut icon" href="../favicon.ico">
     <link href="../css/bootstrap.min.css" rel="stylesheet">
-    <link rel="stylesheet" href="../css/estilos.css">
+    <link href="css/hover.css" rel="stylesheet" media="all">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
+    <link rel="stylesheet" href="../scss/estilos.css">
+    
 </head>
 <body>
-    <header class="container-fluid"><!--Esto es el header-->
+    <header class="container-fluid headerPaginas"><!--Esto es el header-->
         <nav class="navbar slide navbar-expand-lg navbar-dark">
             <div class="container-fluid">
                 <a class="navbar-brand" href="../index.html">
@@ -23,19 +28,19 @@
                 <div class="collapse navbar-collapse" id="navbarSupportedContent">
                     <ul class="navbar-nav mb-lg-0 d-flex ms-auto justify-content-evenly  ColorNav"><!--no se como sacarle el borde del nav cuando pasa a hamburguesa, analizar para proxima entregaS-->
                         <li class="nav-item">
-                            <a class="nav-link active fs-4" aria-current="page" href="../index.html">Inicio</a>
+                            <a class="nav-link active fs-4 hvr-underline-from-center" aria-current="page" href="../index.html">Inicio</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link active fs-4" href="nosotros.html">Nosotros</a>
+                            <a class="nav-link active fs-4 hvr-underline-from-center" href="nosotros.html">Nosotros</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link active fs-4" href="actividades.html">Actividades</a>
+                            <a class="nav-link active fs-4 hvr-underline-from-center" href="actividades.html">Actividades</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link active fs-4" href="galeria.html">Galeria</a>
+                            <a class="nav-link active fs-4 hvr-underline-from-center" href="galeria.html">Galeria</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link active fs-4" href="contacto.html">Contacto</a>
+                            <a class="nav-link active fs-4 hvr-underline-from-center" href="contacto.html">Contacto</a>
                         </li>
                     </ul>
                 </div>
@@ -43,14 +48,14 @@
         </nav>
     </header>
     <section class="fondoNosotrosTitulo text-white">
-        <h1 class="px-5 pt-5 fuenteTitulo">¿Quiénes somos?</h1><!--Lleva una foto de fondo-->
+        <h1 class="px-5 pt-5 fuenteTitulo">¿Quiénes somos?</h1>
     </section>
     <main class="container-fluid FondoMainNosotros"><!--Esto es el main-->
         <div class="row">
             <div class="col">
                 <section class="TextoNosotros">
                     <h2 class="fs-1 mb-4">Acerca de nosotros</h2>
-                    <p>Solemos acostumbrarnos a la rutina y siempre movernos por los mismos sitios, ya sea por comodidad o por desconocimiento, solemos pasar por alto lugares increibles de Buenos Aires que estaban frente a nosotros. Siendo ciudadanos de la ciudad de Buenos Aires queremos abrirles los ojos y enseñarles todas las oportunidades que esta ciudad ofrece, ya sea gastronomía, espectaculos, historia, entre otros.</p>
+                    <p>Solemos acostumbrarnos a la rutina y siempre movernos por los mismos sitios, ya sea por comodidad o por desconocimiento, solemos pasar por alto lugares increibles de Buenos Aires que estaban frente a nosotros. Siendo ciudadanos de la ciudad de Buenos Aires queremos ayudarlos a abrir los ojos y enseñarles todas las oportunidades que esta ciudad ofrece, ya sea gastronomía, espectaculos, historia, entre otros.</p>
                 </section>
             </div>
         </div>
@@ -71,18 +76,18 @@
                 <p>Queres sorprender a tus amigos o pareja? Enseñarle la ciudad a algun familiar de otro país? Esta va a ser tu guía para que puedas quedar bien con quien quieras y siempre tener una experiencia óptima.</p>
             </div>
         </div>
-        <div class="row video">
-            <div class="col d-flex justify-content-center mt-5">
+        <div class="row mt-5 pb-5">
+            <div class="col d-flex justify-content-center ">
                 <iframe width="560" height="315" src="https://www.youtube.com/embed/kz_OU17Os3U" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
             </div>
             
         </div>
     </main>
-    <footer class="container-fluid footerNosotros pt-4"><!--Esto es el footer-->
+    <footer class="container-fluid pt-4"><!--Esto es el footer-->
         <div class="row Redes d-flex justify-content-center">
-            <div class="col-1"><a href="https://www.instagram.com/" target="blank"><img src="../assets/img/instagram.png" alt="InstagramLogo"></a></div>
-            <div class="col-1"><a href="https://twitter.com"><img src="../assets/img/Twitter.png" alt="TwitterLogo"></a></div>
-            <div class="col-1"><a href="https://www.facebook.com/"><img src="../assets/img/Facebook.png" alt="FacebookLogo"></a></div>
+            <div class="col-1"><a href="https://www.instagram.com/" target="blank" class="hvr-grow"><img src="../assets/img/instagram.png" alt="InstagramLogo"></a></div>
+            <div class="col-1"><a href="https://twitter.com" target="blank" class="hvr-grow"><img src="../assets/img/Twitter.png" alt="TwitterLogo"></a></div>
+            <div class="col-1"><a href="https://www.facebook.com/" target="blank" class="hvr-grow"><img src="../assets/img/Facebook.png" alt="FacebookLogo"></a></div>
         </div>
         <div class="row text-white text-center">
             <p class="col fs-5 mt-4 copyright">Copyright © <script>document.write(/\d{4}/.exec(Date())[0])</script> - Desarrollado por Joaquín</p>

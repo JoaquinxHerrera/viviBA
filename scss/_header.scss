@@ -1,0 +1,66 @@
+/*index*/
+.headerIndex{
+    padding: 1rem;
+    width:100%;
+}
+.colorFondoHeader{background-color:transparent;
+    .logo{
+        width:27rem
+    }
+    .ColorNav {
+        background: rgba(217, 217, 217, 0.51);
+        border: 1px solid #FFFFFF;
+        border-radius: 26.5px;
+        width: 43rem;
+        height: 4rem;
+    }
+}
+
+@media screen and (max-width: 768px){
+    
+    .colorFondoHeader{
+        .logo{
+            width:20rem;
+            }
+        .ColorNav {
+            padding-left:1rem;
+            width:11rem;
+            height: 16rem;
+            li{
+                a{
+                    justify-content:center;
+                }
+            }
+        }
+    }
+}
+
+/*resto de paginas*/
+.headerPaginas {background-color: $color-barras;
+    padding: 1rem;
+    width:100%;   
+    .logo{
+        width:27rem
+    }
+    .ColorNav {
+        background: rgba(217, 217, 217, 0.51);
+        border: 1px solid #FFFFFF;
+        border-radius: 26.5px;
+        width: 43rem;
+        height: 4rem;
+    }
+    
+}
+
+@media screen and (max-width: 768px){
+    .headerPaginas{
+        .logo{
+            width:20rem;
+        }
+        .ColorNav {
+            padding-left:1rem;
+            width:11rem;
+            height: 16rem;
+        }
+    }   
+}

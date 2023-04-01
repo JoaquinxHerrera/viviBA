@@ -4,14 +4,19 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Suscribite a nuestro boletin oficial para estar al tanto de todas las novedades y oportunidades que ofrece nuestra ciudad.">
+    <meta name="keywords" content="Buenos Aires, Actividades, Entretenimiento, Noche, Argentina, Recorrido, Tour, Guia, viviBA">
     <title>Contacto</title>
     <link rel="stylesheet" href="../css/all.min.css">
     <link rel="shortcut icon" href="../favicon.ico">
     <link href="../css/bootstrap.min.css" rel="stylesheet">
-    <link rel="stylesheet" href="../css/estilos.css">
+    <link href="css/hover.css" rel="stylesheet" media="all">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
+    <link rel="stylesheet" href="../scss/estilos.css">
+    
 </head>
 <body>
-    <header class="container-fluid"><!--Esto es el header-->
+    <header class="container-fluid headerPaginas"><!--Esto es el header-->
         <nav class="navbar slide navbar-expand-lg navbar-dark">
             <div class="container-fluid">
                 <a class="navbar-brand" href="../index.html">
@@ -23,63 +28,65 @@
                 <div class="collapse navbar-collapse" id="navbarSupportedContent">
                     <ul class="navbar-nav mb-lg-0 d-flex ms-auto justify-content-evenly  ColorNav"><!--no se como sacarle el borde del nav cuando pasa a hamburguesa, analizar para proxima entregaS-->
                         <li class="nav-item">
-                            <a class="nav-link active fs-4" aria-current="page" href="../index.html">Inicio</a>
+                            <a class="nav-link active fs-4 hvr-underline-from-center" aria-current="page" href="../index.html">Inicio</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link active fs-4" href="../pages/nosotros.html">Nosotros</a>
+                            <a class="nav-link active fs-4 hvr-underline-from-center" href="../pages/nosotros.html">Nosotros</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link active fs-4" href="../pages/actividades.html">Actividades</a>
+                            <a class="nav-link active fs-4 hvr-underline-from-center" href="../pages/actividades.html">Actividades</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link active fs-4" href="../pages/galeria.html">Galeria</a>
+                            <a class="nav-link active fs-4 hvr-underline-from-center" href="../pages/galeria.html">Galeria</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link active fs-4" href="../pages/contacto.html">Contacto</a>
+                            <a class="nav-link active fs-4 hvr-underline-from-center" href="../pages/contacto.html">Contacto</a>
                         </li>
                     </ul>
                 </div>
             </div>
         </nav>
     </header>
-    <main class="imagenFondo"><!--Esto es el main-->
-        
-        <section>
-            <h1>Contacto</h1><!--Lleva una imagen de fondo-->
-        </section>
-
-        <div>
+    <section class="fondoContactoTitulo text-white">
+        <h1 class="px-5 pt-5 fuenteTitulo">Contacto</h1>
+    </section>
+    <main class="container-fluid FondoMainContacto"><!--Esto es el main--> <!--ver de agregarle algo alrededor del formulario, lo veo muy vacio-->
+        <div class="row margenTextoContacto">
             <p>Unete a nuestro newsletter para estar siempre al tanto de nuevos descubrimientos, eventos exclusivos y  descuentos para tus actividades.</p>
         </div>
-
-        <div>
-            <img src="../assets/img/FotoContacto.png" alt="FotoDeContacto">
-            <div>
-                <form action="">
-                    <div>
-                        <label for="Nombre"></label>
-                        <input type="text" placeholder="Nombre">
+        <div class="row">
+            <div class="col-sm-12 col-md-6  d-flex justify-content-end ">
+                <img class="fotoContactoFormulario" src= "../assets/img/FotoContacto.png" alt="FotoDeContacto">
+            </div>
+            <div class="col-sm-12 col-md-6  d-flex align-items-center ">
+               <form>
+                    <div class="form-group mb-5 pb-3">
+                        <h2 class="pb-1">Suscribite</h2>
+                        <input type="text" class="form-control cajonFormulario fs-5" id="exampleInputNombre1" aria-describedby="NombreHelp" placeholder="Nombre:">
                     </div>
-                    <div>
-                        <label for="Email"></label>
-                        <input type="email" placeholder="Email">
+                   <div class="form-group mb-5">
+                        <input type="email" class="form-control mt-5 mb-5 cajonFormulario fs-5" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Email:">
+                        <small id="emailHelp" class="form-text text-muted ">Nunca compartiremos tu información con nadie.</small>
+                        
                     </div>
-                    <div>
-                        <input type="submit" value="Suscribirse">
+                    <div class="form-check mb-2 ">
+                      <input type="checkbox" class="form-check-input cajonCheck" id="exampleCheck1">
+                      <label class="form-check-label textoCheck fs-5" for="exampleCheck1">Recordarme</label>
                     </div>
+                    <input type="submit" class="btn btn-primary botonSubmit mt-3 fs-5 hvr-reveal"></input>
                 </form>
             </div>
         </div>
         <div>
-            <p>No olvides seguirnos en nuestras redes sociales para tener nuestros consejos y conocer lo que hacemos cada día. Tambien puedes unirte a nuestra comunidad de Discord donde podras encontrar reseñas de otras personas, actividades recomendadas por la comunidad y mucho mas!</p>
+            <p class="margenTextoContacto2">No olvides seguirnos en nuestras redes sociales para obtener nuestros consejos y conocer lo que hacemos cada día. Tambien puedes unirte a nuestra comunidad de Discord donde podrás encontrar reseñas de otras personas, actividades recomendadas por la comunidad y mucho más!</p>
         </div>
 
     </main>
     <footer class="container-fluid footer pt-4"><!--Esto es el footer-->
         <div class="row Redes d-flex justify-content-center">
-            <div class="col-1"><a href="https://www.instagram.com/" target="blank"><img src="../assets/img/instagram.png" alt="InstagramLogo"></a></div>
-            <div class="col-1"><a href="https://twitter.com"><img src="../assets/img/Twitter.png" alt="TwitterLogo"></a></div>
-            <div class="col-1"><a href="https://www.facebook.com/"><img src="../assets/img/Facebook.png" alt="FacebookLogo"></a></div>
+            <div class="col-1"><a href="https://www.instagram.com/" target="blank" class="hvr-grow"><img src="../assets/img/instagram.png" alt="InstagramLogo"></a></div>
+            <div class="col-1"><a href="https://twitter.com" target="blank" class="hvr-grow"><img src="../assets/img/Twitter.png" alt="TwitterLogo"></a></div>
+            <div class="col-1"><a href="https://www.facebook.com/" target="blank" class="hvr-grow"><img src="../assets/img/Facebook.png" alt="FacebookLogo"></a></div>
         </div>
         <div class="row text-white text-center">
             <p class="col fs-5 mt-4 copyright">Copyright © <script>document.write(/\d{4}/.exec(Date())[0])</script> - Desarrollado por Joaquín</p>
