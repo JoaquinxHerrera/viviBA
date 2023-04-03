@@ -47,6 +47,50 @@
     }
 }
 
+@media screen and (max-width: 1024px){
+    .hero {
+        height:100vh;
+        .titulosindex{
+            .h1index{
+                margin-top:20vh;
+                width:60%;
+                color: $color-blanco;
+                font-size:3rem;
+            }
+            .h2index{
+                width: 50%;
+                color: $color-blanco;
+                margin-top:2vh;
+                margin-bottom: 5vh;
+                font-size:1.3rem;
+            }
+            .boton{
+                font-family: 'Montserrat';
+                font-style: normal;
+                font-weight: 400;
+                font-size: 1rem;
+                color:$color-blanco;
+                margin: 0px 10px;
+                padding:10px 35px;
+                border-radius: 26.5px;
+                text-decoration: none;
+            }
+            
+            .boton1{
+                background-color: #43A6D0;
+                margin-bottom:60px;
+                margin-left: 75px;
+            }
+            
+            .boton2{
+                border: 1px solid white;
+                margin-bottom:60px;
+            }
+        }
+    }
+}
+
+
 @media screen and (max-width: 768px){
     /*Version mobil: index*/
     .hero {
@@ -78,6 +122,21 @@
     background-position: map-get($distribucion-banner, center);
     background-repeat: map-get($distribucion-banner, no-repeat);
 }
+
+@media screen and (max-width: 1024px){
+    .fondoNosotrosTitulo {
+        width: $ancho-banner;
+        height:$alto-banner;
+        background-image: linear-gradient(rgba(78, 78, 78, 0.412) 100%, rgba(78, 78, 78, 0.412) 100%), url(../assets/img/fondoNostrosTitulo.png);
+        background-size: map-get($distribucion-banner, cover);
+        background-position: map-get($distribucion-banner, center);
+        background-repeat: map-get($distribucion-banner, no-repeat);
+        h1{
+            font-size: 3rem;
+        }
+    }
+}
+
 @media screen and (max-width: 768px){
     /*Version mobil: resto de paginas*/
     .fondoNosotrosTitulo{

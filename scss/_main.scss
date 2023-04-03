@@ -11,6 +11,27 @@
     }
 }
 
+@media screen and (max-width: 1024px){
+    .FondoMainInicio{
+        width: 100%;
+        background-image: url(../assets/img/FondoVacaInicio.png);
+        .galeriaIndex{
+            margin-top:10rem;
+            .seccionFotos{
+                margin-bottom: 50px;
+                text-align:center;
+                .indexFotos{
+                    height: 25rem;
+                    width: 25rem;
+                    padding: 1rem;
+                }
+            }
+        }
+    }
+
+}
+
+
 @media screen and (max-width: 768px){
     /*Version mobil: main index*/
     .FondoMainInicio{
@@ -49,6 +70,46 @@
     }
 }
 
+@media screen and (max-width: 1024px){
+    .FondoMainNosotros{
+        @extend .FondoMainInicio;
+        background-image: url(../assets/img/FondoVacaNosotros.png);
+        .TextoNosotros{
+            margin-left:5rem;
+            margin-top: 5rem;
+            width: 55vw;
+            h2{
+                color: #39B4E9;
+            }
+            p{
+                font-size: 1.3rem;
+            }
+            
+        }
+        .seccionFotos{
+            margin-bottom: 50px;
+            text-align:center;
+            .indexFotos{
+                height: 22rem;
+                width: 22rem;
+                padding: 1rem;
+            }
+        }
+        .ImagenesNosotros{
+            margin-top: 50px;
+            margin-bottom: 20px;
+        }
+        .TextoNosotros2{
+            margin-left:5rem;
+            width: 85vw;
+            p{
+                font-size: 1.3rem;
+            }
+        }
+    }
+
+}
+
 @media screen and (max-width: 768px){
     /*Version mobil: main nosotros*/
     .FondoMainNosotros{
@@ -75,6 +136,20 @@
     }
 }
 
+@media screen and (max-width: 1024px){
+    .FondoMainActividades{
+        @extend .FondoMainInicio;
+        background-image: url(../assets/img/FondoVacaActividades.png);
+        .mapaActividades{
+            width:25rem;
+            height:25rem;
+        }
+        .card-body{
+            margin-left:2rem;
+        }
+    }
+}
+
 @media screen and (max-width: 768px){
     /*Version mobil: main actividades*/
     .FondoMainActividades{
@@ -97,9 +172,17 @@
     background-image: url(../assets/img/FondoVacaGaleria.png);
 }
 
-    
-
-
+@media screen and (max-width: 1024px){    
+    .FondoMainGaleria{
+        @extend .FondoMainInicio;
+        background-image: url(../assets/img/FondoVacaGaleria.png);
+        .indexFotos{
+            height: 25rem;
+            width: 25rem;
+            padding: 1rem;
+        }
+    }
+}  
 @media screen and (max-width: 768px){
     /*Version mobil: main galeria*/
     .margenMobil{
@@ -152,6 +235,55 @@
     }
 }
 
+@media screen and (max-width: 1024px){  
+    .FondoMainContacto{
+        .margenTextoContacto{
+            margin-top:5rem;
+            margin-left:5rem;
+            margin-bottom:2rem;
+            p{
+                font-size:1.5rem;
+            }
+    
+        }
+        .margenTextoContacto2{
+            margin-top:2rem;
+            margin-left:5rem;
+            margin-bottom:2rem;
+            font-size:1.5rem;
+        }
+        .fotoContactoFormulario{
+            width: 33rem;
+        }
+        .cajonFormulario{
+            box-sizing: border-box;
+            position: absolute;
+            width: 30rem;
+            height: 4rem;
+            background: #D9D9D9;
+            border: 0.634812px solid #000000;
+            border-radius: 17.1399px;
+        }
+        .botonSubmit{
+            position: absolute;
+            width: 9rem;
+            height: 4rem;
+            background: #2F3437;
+            border: 0.634812px solid #000000;
+            border-radius: 13.1399px;
+        }
+        .cajonCheck{
+            margin-top: 3.6rem;
+        }
+        
+        .textoCheck{
+            margin-top: 3rem;
+        }
+    }
+}
+
+
+    
 @media screen and (max-width: 768px){
     /*Version mobil: main contacto*/
     .FondoMainContacto{
