@@ -40,6 +40,12 @@
         height:100%;
         .galeriaIndex{
             margin-top:2rem;
+            .seccionFotos{
+                .indexFotos{
+                    height: 30rem;
+                    width: 30rem;
+                }
+            }
         }
     } 
 }
@@ -72,8 +78,6 @@
 
 @media screen and (max-width: 1024px){
     .FondoMainNosotros{
-        @extend .FondoMainInicio;
-        background-image: url(../assets/img/FondoVacaNosotros.png);
         .TextoNosotros{
             margin-left:5rem;
             margin-top: 5rem;
@@ -120,6 +124,14 @@
             margin-left:1rem;
             width:95%
         }
+        .seccionFotos{
+            margin-bottom: 50px;
+            text-align:center;
+            .indexFotos{
+                height: 30rem;
+                width: 30rem;
+            }
+        }
         .TextoNosotros2{
             margin-left:1rem;
         }
@@ -130,16 +142,19 @@
 .FondoMainActividades{
     @extend .FondoMainInicio;
     background-image: url(../assets/img/FondoVacaActividades.png);
-    .mapaActividades{
-        width:45rem;
-        height:25rem;
+    .boxMapa{
+        height:33vh;
+        .mapaActividades{
+            width:100%;
+            height:98%;
+            
+        }
     }
+    
 }
 
 @media screen and (max-width: 1024px){
     .FondoMainActividades{
-        @extend .FondoMainInicio;
-        background-image: url(../assets/img/FondoVacaActividades.png);
         .mapaActividades{
             width:25rem;
             height:25rem;
@@ -174,8 +189,6 @@
 
 @media screen and (max-width: 1024px){    
     .FondoMainGaleria{
-        @extend .FondoMainInicio;
-        background-image: url(../assets/img/FondoVacaGaleria.png);
         .indexFotos{
             height: 25rem;
             width: 25rem;
@@ -185,8 +198,14 @@
 }  
 @media screen and (max-width: 768px){
     /*Version mobil: main galeria*/
-    .margenMobil{
-        margin-bottom:2rem;
+    .FondoMainGaleria{
+        .indexFotos{
+            height: 30rem;
+            width: 30rem;
+        }
+        .margenMobil{
+            margin-bottom:2rem;
+        }
     }
 }
 
@@ -197,17 +216,17 @@
     background-size: cover;
     .margenTextoContacto{
         margin-top:10rem;
-        margin-left:21rem;
+        margin-left:14vw;
         margin-bottom:2rem;
     }
     .margenTextoContacto2{
         margin-top: 6rem;
-        margin-left:21rem;
+        margin-left:14.5vw;
         margin-right:20rem;
         margin-bottom:10rem;
     }
     .fotoContactoFormulario{
-        width: 50rem;
+        width: 34vw;
     }
     .cajonFormulario{
         box-sizing: border-box;
@@ -292,7 +311,8 @@
             margin-top:2rem;
         }
         .margenTextoContacto2{
-            margin-top:13rem;
+            margin-top:10rem;
+            margin-bottom:4rem;
             margin-left:1rem;
             margin-right:1rem;
         }
@@ -300,5 +320,159 @@
             width:100%;
             margin-bottom:2rem;
         }
+    }
+}
+
+/*Error 404*/
+.main404{
+    font-family: $font;
+    color: $white;
+}
+.background{
+    margin-top:12vh;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient($black, $blue);
+    .ground{
+        position: absolute;
+        bottom: 0;
+        width: 100%;
+        height: 15vh;
+        background: $black;
+    }
+}
+.container404{
+    position: relative;
+    margin: 0 auto;
+    width: 85%;
+    height: 81vh;
+    margin-bottom:12vh;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+
+//Left Section Styles
+.left-section{
+    width: 40%;
+    padding-top:10rem;
+}
+
+.heading{
+    text-align: center;
+    font-size: 9em;
+    line-height: 1.3em;
+    margin: 2rem 0 0.5rem 15rem;
+    padding: 0;
+    text-shadow: 0 0 1rem #fefefe;
+}
+.subheading{
+    text-align: center; 
+    max-width: 480px;
+    font-size: 1.5em;
+    line-height: 1.15em;
+    margin-left:15rem;
+    padding: 0 1rem;
+}
+
+.boton{
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    color:$color-blanco;
+    padding:10px 35px;
+    border-radius: 26.5px;
+    text-decoration: none;
+}
+
+.boton2{
+    margin-top:30px;
+    margin-left:27rem;
+    border: 1px solid white;
+    
+}
+//Right Section Styles
+.right-section{
+    width: 50%;
+    height: 90vh;
+    .svgimg{
+        height: 100%;
+        bottom: 0;
+        padding-top: 10vh;
+        padding-left: 1vh;
+        max-width: 100%;
+        max-height: 100%;
+        .bench-legs{
+            fill: black;
+        }
+        .top-bench, .bottom-bench{
+            stroke: $black ;
+            stroke-width: 1px;
+            fill: #5B3E2B;
+        }
+        .bottom-bench path:nth-child(1){
+            fill: darken(#5B3E2B,7%);
+        }
+        .lamp-details{
+            fill: $gray;
+            margin-bottom: -10px;
+        }
+        .lamp-accent{
+            fill: lighten($gray, 5%);
+        }
+        .lamp-bottom{
+            fill: linear-gradient($gray, $black);
+        }
+        .lamp-light{
+            fill: #EFEFEF;
+        }
+    }
+}
+
+/*Version mobil: Error 404*/
+@media screen and (max-width: 768px){
+    .main404{
+        height:70vh;
+        background: linear-gradient($black, $blue);
+        .background{
+            display:none;           
+            .ground{
+                display:none;
+                }
+        }
+    }
+
+    //Left Section Styles
+    .left-section{
+        width: 100%;
+
+    }
+    
+    .heading{
+        margin-left:1rem;
+
+    }
+    .subheading{
+        margin-left:1rem;
+    }
+    
+    .boton{
+        margin-left:8rem;
+          
+    }
+    
+    .boton2{
+        margin-top:20px;
+        
+        text-align: center;
+        
+    }
+    //Right Section Styles
+    .right-section{
+        display:none;
     }
 }

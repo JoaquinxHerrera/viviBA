@@ -1,7 +1,7 @@
 /*index*/
 .hero {
     width: $ancho-banner;
-    height:114.56vh;
+    height:100vh;
     background-image:linear-gradient(90deg, rgba(0,0,0,1) 0%, rgba(0,0,0,0) 100%), url(../assets/img/background.png);
     background-size: cover;
     background-position: center;
@@ -14,13 +14,13 @@
         .h1index{
             margin-top:20vh;
             width:50%;
+            font-size: 7vh;
             color: $color-blanco;
         }
         .h2index{
             width: 40%;
             color: $color-blanco;
             margin-top:2vh;
-            margin-bottom: 5vh;
         }
         .boton{
             font-family: 'Montserrat';
@@ -98,7 +98,7 @@
             .h1index{
                 font-size:3rem;
                 width:90vw;
-                margin-top:62vh;   
+                margin-top:57vh;   
             }
             .h2index{
                 display:none;
@@ -115,19 +115,19 @@
 
 /*nosotros*/
 .fondoNosotrosTitulo {
-    width: $ancho-banner;
-    height:$alto-banner;
-    background-image: linear-gradient(rgba(78, 78, 78, 0.412) 100%, rgba(78, 78, 78, 0.412) 100%), url(../assets/img/fondoNostrosTitulo.png);
-    background-size: map-get($distribucion-banner, cover);
-    background-position: map-get($distribucion-banner, center);
-    background-repeat: map-get($distribucion-banner, no-repeat);
+    height:85vh;
+    background-image: linear-gradient(rgba(78, 78, 78, 0.412) 100%, rgba(78, 78, 78, 0.412) 100%), url(../assets/img/puente\ de\ la\ mujer.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    width: 100%;
 }
 
 @media screen and (max-width: 1024px){
     .fondoNosotrosTitulo {
         width: $ancho-banner;
-        height:$alto-banner;
-        background-image: linear-gradient(rgba(78, 78, 78, 0.412) 100%, rgba(78, 78, 78, 0.412) 100%), url(../assets/img/fondoNostrosTitulo.png);
+        height:40rem;
+        background-image: linear-gradient(rgba(78, 78, 78, 0.412) 100%, rgba(78, 78, 78, 0.412) 100%), url(../assets/img/bannerNosotrosMobil.png);
         background-size: map-get($distribucion-banner, cover);
         background-position: map-get($distribucion-banner, center);
         background-repeat: map-get($distribucion-banner, no-repeat);
@@ -149,13 +149,14 @@
 /*actividades*/
 .fondoActividadesTitulo{
     @extend .fondoNosotrosTitulo;
-    background-image: linear-gradient(rgba(78, 78, 78, 0.412) 100%, rgba(78, 78, 78, 0.412) 100%), url(../assets/img/FondoActividadesTitulo.png);
+    background-image: linear-gradient(rgba(78, 78, 78, 0.412) 100%, rgba(78, 78, 78, 0.412) 100%), url(../assets/img/teatrocolon.jpg);
 }
 
 @media screen and (max-width: 768px){
     
     /*Version mobil: resto de paginas*/
     .fondoActividadesTitulo{
+        background-image: linear-gradient(rgba(78, 78, 78, 0.412) 100%, rgba(78, 78, 78, 0.412) 100%), url(../assets/img/teatrocolon.jpg);
         .fuenteTitulo{
             font-size:2.9rem;
         }
@@ -172,6 +173,7 @@
     
     /*Version mobil: resto de paginas*/
     .fondoGaleriaTitulo{
+        background-image: linear-gradient(rgba(78, 78, 78, 0.412) 100%, rgba(78, 78, 78, 0.412) 100%), url(../assets/img/bannerGaleriaMobil.png);
         .fuenteTitulo{
             font-size:2.9rem;
         }
@@ -189,6 +191,7 @@
     
     /*Version mobil: resto de paginas*/
     .fondoContactoTitulo{
+        background-image: linear-gradient(rgba(78, 78, 78, 0.412) 100%, rgba(78, 78, 78, 0.412) 100%), url(../assets/img/bannerContactoMobil.png);
         .fuenteTitulo{
             font-size:2.9rem;
         }

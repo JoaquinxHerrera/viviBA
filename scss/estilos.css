@@ -1,8 +1,13 @@
 @import url("https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;700&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap");
+@import url("https://fonts.googleapis.com/css?family=Fira+Sans");
+/*Variables404*/
 /*maps*/
 * {
   font-size: small;
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
 }
 
 h1 {
@@ -140,7 +145,7 @@ p {
 /*index*/
 .hero {
   width: 100%;
-  height: 114.56vh;
+  height: 100vh;
   background-image: linear-gradient(90deg, rgb(0, 0, 0) 0%, rgba(0, 0, 0, 0) 100%), url(../assets/img/background.png);
   background-size: cover;
   background-position: center;
@@ -155,13 +160,13 @@ p {
 .hero .titulosindex .h1index {
   margin-top: 20vh;
   width: 50%;
+  font-size: 7vh;
   color: white;
 }
 .hero .titulosindex .h2index {
   width: 40%;
   color: white;
   margin-top: 2vh;
-  margin-bottom: 5vh;
 }
 .hero .titulosindex .boton {
   font-family: "Montserrat";
@@ -227,7 +232,7 @@ p {
   .hero .titulosindex .h1index {
     font-size: 3rem;
     width: 90vw;
-    margin-top: 62vh;
+    margin-top: 57vh;
   }
   .hero .titulosindex .h2index {
     display: none;
@@ -238,16 +243,19 @@ p {
 }
 /*nosotros*/
 .fondoNosotrosTitulo, .fondoContactoTitulo, .fondoGaleriaTitulo, .fondoActividadesTitulo {
+  height: 85vh;
+  background-image: linear-gradient(rgba(78, 78, 78, 0.412) 100%, rgba(78, 78, 78, 0.412) 100%), url(../assets/img/puente\ de\ la\ mujer.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
   width: 100%;
-  height: 69vh;
-  background-image: linear-gradient(rgba(78, 78, 78, 0.412) 100%, rgba(78, 78, 78, 0.412) 100%), url(../assets/img/fondoNostrosTitulo.png);
 }
 
 @media screen and (max-width: 1024px) {
   .fondoNosotrosTitulo, .fondoContactoTitulo, .fondoGaleriaTitulo, .fondoActividadesTitulo {
     width: 100%;
-    height: 69vh;
-    background-image: linear-gradient(rgba(78, 78, 78, 0.412) 100%, rgba(78, 78, 78, 0.412) 100%), url(../assets/img/fondoNostrosTitulo.png);
+    height: 40rem;
+    background-image: linear-gradient(rgba(78, 78, 78, 0.412) 100%, rgba(78, 78, 78, 0.412) 100%), url(../assets/img/bannerNosotrosMobil.png);
   }
   .fondoNosotrosTitulo h1, .fondoContactoTitulo h1, .fondoGaleriaTitulo h1, .fondoActividadesTitulo h1 {
     font-size: 3rem;
@@ -261,11 +269,14 @@ p {
 }
 /*actividades*/
 .fondoActividadesTitulo {
-  background-image: linear-gradient(rgba(78, 78, 78, 0.412) 100%, rgba(78, 78, 78, 0.412) 100%), url(../assets/img/FondoActividadesTitulo.png);
+  background-image: linear-gradient(rgba(78, 78, 78, 0.412) 100%, rgba(78, 78, 78, 0.412) 100%), url(../assets/img/teatrocolon.jpg);
 }
 
 @media screen and (max-width: 768px) {
   /*Version mobil: resto de paginas*/
+  .fondoActividadesTitulo {
+    background-image: linear-gradient(rgba(78, 78, 78, 0.412) 100%, rgba(78, 78, 78, 0.412) 100%), url(../assets/img/teatrocolon.jpg);
+  }
   .fondoActividadesTitulo .fuenteTitulo {
     font-size: 2.9rem;
   }
@@ -277,6 +288,9 @@ p {
 
 @media screen and (max-width: 768px) {
   /*Version mobil: resto de paginas*/
+  .fondoGaleriaTitulo {
+    background-image: linear-gradient(rgba(78, 78, 78, 0.412) 100%, rgba(78, 78, 78, 0.412) 100%), url(../assets/img/bannerGaleriaMobil.png);
+  }
   .fondoGaleriaTitulo .fuenteTitulo {
     font-size: 2.9rem;
   }
@@ -288,6 +302,9 @@ p {
 
 @media screen and (max-width: 768px) {
   /*Version mobil: resto de paginas*/
+  .fondoContactoTitulo {
+    background-image: linear-gradient(rgba(78, 78, 78, 0.412) 100%, rgba(78, 78, 78, 0.412) 100%), url(../assets/img/bannerContactoMobil.png);
+  }
   .fondoContactoTitulo .fuenteTitulo {
     font-size: 2.9rem;
   }
@@ -352,9 +369,43 @@ p {
     height: 16rem;
   }
 }
+/*Error 404*/
+.headerPaginas404 {
+  background: #0C0E10;
+  padding: 1rem;
+  width: 100%;
+}
+.headerPaginas404 .logo {
+  width: 27rem;
+}
+.headerPaginas404 .ColorNav {
+  background: rgba(217, 217, 217, 0.51);
+  border: 1px solid #FFFFFF;
+  border-radius: 26.5px;
+  width: 43rem;
+  height: 4rem;
+}
+
+@media screen and (max-width: 768px) {
+  .headerPaginas404 .logo {
+    width: 20rem;
+  }
+  .headerPaginas404 .ColorNav {
+    padding-left: 1rem;
+    width: 11rem;
+    height: 16rem;
+  }
+  .headerPaginas404 .ColorNav li a {
+    justify-content: center;
+  }
+}
 body {
   background-color: white;
   margin: 0;
+}
+
+html {
+  overflow-x: hidden;
 }
 
 /*index*/
@@ -398,6 +449,10 @@ body {
   .FondoMainInicio .galeriaIndex, .FondoMainGaleria .galeriaIndex, .FondoMainActividades .galeriaIndex, .FondoMainNosotros .galeriaIndex {
     margin-top: 2rem;
   }
+  .FondoMainInicio .galeriaIndex .seccionFotos .indexFotos, .FondoMainGaleria .galeriaIndex .seccionFotos .indexFotos, .FondoMainActividades .galeriaIndex .seccionFotos .indexFotos, .FondoMainNosotros .galeriaIndex .seccionFotos .indexFotos {
+    height: 30rem;
+    width: 30rem;
+  }
 }
 /*nosotros*/
 .FondoMainNosotros {
@@ -425,9 +480,6 @@ body {
 }
 
 @media screen and (max-width: 1024px) {
-  .FondoMainNosotros {
-    background-image: url(../assets/img/FondoVacaNosotros.png);
-  }
   .FondoMainNosotros .TextoNosotros {
     margin-left: 5rem;
     margin-top: 5rem;
@@ -471,6 +523,14 @@ body {
     margin-left: 1rem;
     width: 95%;
   }
+  .FondoMainNosotros .seccionFotos {
+    margin-bottom: 50px;
+    text-align: center;
+  }
+  .FondoMainNosotros .seccionFotos .indexFotos {
+    height: 30rem;
+    width: 30rem;
+  }
   .FondoMainNosotros .TextoNosotros2 {
     margin-left: 1rem;
   }
@@ -479,15 +539,15 @@ body {
 .FondoMainActividades {
   background-image: url(../assets/img/FondoVacaActividades.png);
 }
-.FondoMainActividades .mapaActividades {
-  width: 45rem;
-  height: 25rem;
+.FondoMainActividades .boxMapa {
+  height: 33vh;
+}
+.FondoMainActividades .boxMapa .mapaActividades {
+  width: 100%;
+  height: 98%;
 }
 
 @media screen and (max-width: 1024px) {
-  .FondoMainActividades {
-    background-image: url(../assets/img/FondoVacaActividades.png);
-  }
   .FondoMainActividades .mapaActividades {
     width: 25rem;
     height: 25rem;
@@ -517,9 +577,6 @@ body {
 }
 
 @media screen and (max-width: 1024px) {
-  .FondoMainGaleria {
-    background-image: url(../assets/img/FondoVacaGaleria.png);
-  }
   .FondoMainGaleria .indexFotos {
     height: 25rem;
     width: 25rem;
@@ -528,7 +585,11 @@ body {
 }
 @media screen and (max-width: 768px) {
   /*Version mobil: main galeria*/
-  .margenMobil {
+  .FondoMainGaleria .indexFotos {
+    height: 30rem;
+    width: 30rem;
+  }
+  .FondoMainGaleria .margenMobil {
     margin-bottom: 2rem;
   }
 }
@@ -540,17 +601,17 @@ body {
 }
 .FondoMainContacto .margenTextoContacto {
   margin-top: 10rem;
-  margin-left: 21rem;
+  margin-left: 14vw;
   margin-bottom: 2rem;
 }
 .FondoMainContacto .margenTextoContacto2 {
   margin-top: 6rem;
-  margin-left: 21rem;
+  margin-left: 14.5vw;
   margin-right: 20rem;
   margin-bottom: 10rem;
 }
 .FondoMainContacto .fotoContactoFormulario {
-  width: 50rem;
+  width: 34vw;
 }
 .FondoMainContacto .cajonFormulario {
   box-sizing: border-box;
@@ -625,13 +686,157 @@ body {
     margin-top: 2rem;
   }
   .FondoMainContacto .margenTextoContacto2 {
-    margin-top: 13rem;
+    margin-top: 10rem;
+    margin-bottom: 4rem;
     margin-left: 1rem;
     margin-right: 1rem;
   }
   .FondoMainContacto .fotoContactoFormulario {
     width: 100%;
     margin-bottom: 2rem;
+  }
+}
+/*Error 404*/
+.main404 {
+  font-family: "Fira Sans", sans-serif;
+  color: #f5f6fa;
+}
+
+.background {
+  margin-top: 12vh;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(#0C0E10, #446182);
+}
+.background .ground {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  height: 15vh;
+  background: #0C0E10;
+}
+
+.container404 {
+  position: relative;
+  margin: 0 auto;
+  width: 85%;
+  height: 81vh;
+  margin-bottom: 12vh;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+}
+
+.left-section {
+  width: 40%;
+  padding-top: 10rem;
+}
+
+.heading {
+  text-align: center;
+  font-size: 9em;
+  line-height: 1.3em;
+  margin: 2rem 0 0.5rem 15rem;
+  padding: 0;
+  text-shadow: 0 0 1rem #fefefe;
+}
+
+.subheading {
+  text-align: center;
+  max-width: 480px;
+  font-size: 1.5em;
+  line-height: 1.15em;
+  margin-left: 15rem;
+  padding: 0 1rem;
+}
+
+.boton {
+  font-family: "Montserrat";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  color: white;
+  padding: 10px 35px;
+  border-radius: 26.5px;
+  text-decoration: none;
+}
+
+.boton2 {
+  margin-top: 30px;
+  margin-left: 27rem;
+  border: 1px solid white;
+}
+
+.right-section {
+  width: 50%;
+  height: 90vh;
+}
+.right-section .svgimg {
+  height: 100%;
+  bottom: 0;
+  padding-top: 10vh;
+  padding-left: 1vh;
+  max-width: 100%;
+  max-height: 100%;
+}
+.right-section .svgimg .bench-legs {
+  fill: black;
+}
+.right-section .svgimg .top-bench, .right-section .svgimg .bottom-bench {
+  stroke: #0C0E10;
+  stroke-width: 1px;
+  fill: #5B3E2B;
+}
+.right-section .svgimg .bottom-bench path:nth-child(1) {
+  fill: #432d20;
+}
+.right-section .svgimg .lamp-details {
+  fill: #202425;
+  margin-bottom: -10px;
+}
+.right-section .svgimg .lamp-accent {
+  fill: #2c3133;
+}
+.right-section .svgimg .lamp-bottom {
+  fill: linear-gradient(#202425, #0C0E10);
+}
+.right-section .svgimg .lamp-light {
+  fill: #EFEFEF;
+}
+
+/*Version mobil: Error 404*/
+@media screen and (max-width: 768px) {
+  .main404 {
+    height: 70vh;
+    background: linear-gradient(#0C0E10, #446182);
+  }
+  .main404 .background {
+    display: none;
+  }
+  .main404 .background .ground {
+    display: none;
+  }
+  .left-section {
+    width: 100%;
+  }
+  .heading {
+    margin-left: 1rem;
+  }
+  .subheading {
+    margin-left: 1rem;
+  }
+  .boton {
+    margin-left: 8rem;
+  }
+  .boton2 {
+    margin-top: 20px;
+    text-align: center;
+  }
+  .right-section {
+    display: none;
   }
 }
 footer {
@@ -646,5 +851,16 @@ footer .Redes {
 @media screen and (max-width: 768px) {
   footer .Redes {
     justify-content: center;
+  }
+}
+/*Error 404*/
+.footer404 {
+  background: #0C0E10;
+}
+
+/*version mobil: Error 404*/
+@media screen and (max-width: 768px) {
+  .footer404 {
+    padding-top: 7rem;
   }
 }/*# sourceMappingURL=estilos.css.map */

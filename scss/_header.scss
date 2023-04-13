@@ -36,7 +36,8 @@
 }
 
 /*resto de paginas*/
-.headerPaginas {background-color: $color-barras;
+.headerPaginas {
+    background-color: $color-barras;
     padding: 1rem;
     width:100%;   
     .logo{
@@ -63,4 +64,41 @@
             height: 16rem;
         }
     }   
+}
+
+/*Error 404*/
+
+.headerPaginas404{
+    background: $black;
+    padding: 1rem;
+    width:100%;   
+    .logo{
+        width:27rem
+    }
+    .ColorNav {
+        background: rgba(217, 217, 217, 0.51);
+        border: 1px solid #FFFFFF;
+        border-radius: 26.5px;
+        width: 43rem;
+        height: 4rem;
+    }
+    
+}
+
+@media screen and (max-width: 768px){
+    .headerPaginas404{ 
+        .logo{
+            width:20rem;
+            }
+        .ColorNav {
+            padding-left:1rem;
+            width:11rem;
+            height: 16rem;
+            li{
+                a{
+                    justify-content:center;
+                }
+            }
+        }
+    }
 }

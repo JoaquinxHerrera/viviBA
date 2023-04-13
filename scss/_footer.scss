@@ -16,3 +16,15 @@ footer{
         }
     }
 }
+
+/*Error 404*/
+.footer404{
+    background: $black;
+}
+
+/*version mobil: Error 404*/
+@media screen and (max-width: 768px){
+    .footer404{
+        padding-top:7rem;
+    }
+}
