@@ -244,23 +244,13 @@ p {
 /*nosotros*/
 .fondoNosotrosTitulo, .fondoContactoTitulo, .fondoGaleriaTitulo, .fondoActividadesTitulo {
   height: 85vh;
-  background-image: linear-gradient(rgba(78, 78, 78, 0.412) 100%, rgba(78, 78, 78, 0.412) 100%), url(../assets/img/puente\ de\ la\ mujer.jpg);
+  background-image: linear-gradient(rgba(78, 78, 78, 0.412) 100%, rgba(78, 78, 78, 0.412) 100%), url(../assets/img/BannerNosotros.jpg);
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
   width: 100%;
 }
 
-@media screen and (max-width: 1024px) {
-  .fondoNosotrosTitulo, .fondoContactoTitulo, .fondoGaleriaTitulo, .fondoActividadesTitulo {
-    width: 100%;
-    height: 40rem;
-    background-image: linear-gradient(rgba(78, 78, 78, 0.412) 100%, rgba(78, 78, 78, 0.412) 100%), url(../assets/img/bannerNosotrosMobil.png);
-  }
-  .fondoNosotrosTitulo h1, .fondoContactoTitulo h1, .fondoGaleriaTitulo h1, .fondoActividadesTitulo h1 {
-    font-size: 3rem;
-  }
-}
 @media screen and (max-width: 768px) {
   /*Version mobil: resto de paginas*/
   .fondoNosotrosTitulo .fuenteTitulo, .fondoContactoTitulo .fuenteTitulo, .fondoGaleriaTitulo .fuenteTitulo, .fondoActividadesTitulo .fuenteTitulo {
@@ -269,13 +259,13 @@ p {
 }
 /*actividades*/
 .fondoActividadesTitulo {
-  background-image: linear-gradient(rgba(78, 78, 78, 0.412) 100%, rgba(78, 78, 78, 0.412) 100%), url(../assets/img/teatrocolon.jpg);
+  background-image: linear-gradient(rgba(78, 78, 78, 0.412) 100%, rgba(78, 78, 78, 0.412) 100%), url(../assets/img/teatrocolon1.jpg);
 }
 
 @media screen and (max-width: 768px) {
   /*Version mobil: resto de paginas*/
   .fondoActividadesTitulo {
-    background-image: linear-gradient(rgba(78, 78, 78, 0.412) 100%, rgba(78, 78, 78, 0.412) 100%), url(../assets/img/teatrocolon.jpg);
+    background-image: linear-gradient(rgba(78, 78, 78, 0.412) 100%, rgba(78, 78, 78, 0.412) 100%), url(../assets/img/teatrocolon1.jpg);
   }
   .fondoActividadesTitulo .fuenteTitulo {
     font-size: 2.9rem;
@@ -829,7 +819,7 @@ html {
     margin-left: 1rem;
   }
   .boton {
-    margin-left: 8rem;
+    margin-left: 25vw;
   }
   .boton2 {
     margin-top: 20px;

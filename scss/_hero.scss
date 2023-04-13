@@ -116,26 +116,13 @@
 /*nosotros*/
 .fondoNosotrosTitulo {
     height:85vh;
-    background-image: linear-gradient(rgba(78, 78, 78, 0.412) 100%, rgba(78, 78, 78, 0.412) 100%), url(../assets/img/puente\ de\ la\ mujer.jpg);
+    background-image: linear-gradient(rgba(78, 78, 78, 0.412) 100%, rgba(78, 78, 78, 0.412) 100%), url(../assets/img/BannerNosotros.jpg);
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
     width: 100%;
 }
 
-@media screen and (max-width: 1024px){
-    .fondoNosotrosTitulo {
-        width: $ancho-banner;
-        height:40rem;
-        background-image: linear-gradient(rgba(78, 78, 78, 0.412) 100%, rgba(78, 78, 78, 0.412) 100%), url(../assets/img/bannerNosotrosMobil.png);
-        background-size: map-get($distribucion-banner, cover);
-        background-position: map-get($distribucion-banner, center);
-        background-repeat: map-get($distribucion-banner, no-repeat);
-        h1{
-            font-size: 3rem;
-        }
-    }
-}
 
 @media screen and (max-width: 768px){
     /*Version mobil: resto de paginas*/
@@ -149,14 +136,14 @@
 /*actividades*/
 .fondoActividadesTitulo{
     @extend .fondoNosotrosTitulo;
-    background-image: linear-gradient(rgba(78, 78, 78, 0.412) 100%, rgba(78, 78, 78, 0.412) 100%), url(../assets/img/teatrocolon.jpg);
+    background-image: linear-gradient(rgba(78, 78, 78, 0.412) 100%, rgba(78, 78, 78, 0.412) 100%), url(../assets/img/teatrocolon1.jpg);
 }
 
 @media screen and (max-width: 768px){
     
     /*Version mobil: resto de paginas*/
     .fondoActividadesTitulo{
-        background-image: linear-gradient(rgba(78, 78, 78, 0.412) 100%, rgba(78, 78, 78, 0.412) 100%), url(../assets/img/teatrocolon.jpg);
+        background-image: linear-gradient(rgba(78, 78, 78, 0.412) 100%, rgba(78, 78, 78, 0.412) 100%), url(../assets/img/teatrocolon1.jpg);
         .fuenteTitulo{
             font-size:2.9rem;
         }
